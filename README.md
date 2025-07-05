@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-<img src="https://github.com/juniorschmitz/juniorschmitz/raw/output/space-invaders-grid.png" />
+<img src="https://github.com/juniorschmitz/juniorschmitz/space-invaders-grid.png" />
 
 <!--
 **juniorschmitz/juniorschmitz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

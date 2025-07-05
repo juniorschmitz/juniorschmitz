@@ -104,8 +104,7 @@ def draw_svg(contributions):
         lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + 1.0}s' />")
         lines.append("</use>")
 
-    lines.append(f"<text x='30' y='175' fill='white'>{USERNAME}</text>
-")
+    lines.append(f"<text x='30' y='175' fill='white'>{USERNAME}</text>")
     lines.append(SVG_FOOTER)
     return "\n".join(lines)
 

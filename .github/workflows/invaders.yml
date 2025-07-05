@@ -25,7 +25,7 @@ jobs:
           GITHUB_USERNAME: juniorschmitz
           GITHUB_TOKEN: ${{ secrets.TOKEN_GIT }}
         run: |
-          python space_invaders_generator.py
+          python space.py
 
       - name: Commit e push do SVG
         run: |

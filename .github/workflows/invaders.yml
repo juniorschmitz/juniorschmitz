@@ -1,0 +1,36 @@
+# .github/workflows/invaders.yml
+
+name: 🚀 Space Invaders SVG Generator
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Executa diariamente às 03:00 UTC
+  workflow_dispatch:
+
+jobs:
+  generate-svg:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v3
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Executar gerador Space Invaders
+        env:
+          GITHUB_USERNAME: juniorschmitz
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python space.py
+
+      - name: Commit e push do SVG
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add output/space-invaders-grid.svg
+          git commit -m "🎮 Atualiza Space Invaders SVG"
+          git push
+        continue-on-error: true

@@ -1,185 +1,130 @@
 <svg xmlns='http://www.w3.org/2000/svg' width='800' height='180' style='background:black;font-family:monospace;font-size:14px;'>
-<text x='46' y='84' fill='violet'>
+<text x='116' y='94' fill='violet'>
   👾
-  <animate attributeName='y' values='84;87;84' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='94;97;94' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='734' y='52' fill='violet'>
+<text x='804' y='62' fill='violet'>
   👾
-  <animate attributeName='y' values='52;55;52' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='62;65;62' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='750' y='52' fill='violet'>
+<text x='820' y='62' fill='violet'>
   👾
-  <animate attributeName='y' values='52;55;52' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='62;65;62' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='782' y='52' fill='violet'>
+<text x='852' y='62' fill='violet'>
   👾
-  <animate attributeName='y' values='52;55;52' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='62;65;62' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='814' y='20' fill='violet'>
+<text x='884' y='30' fill='violet'>
   👾
-  <animate attributeName='y' values='20;23;20' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='30;33;30' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='830' y='20' fill='violet'>
+<text x='900' y='30' fill='violet'>
   👾
-  <animate attributeName='y' values='20;23;20' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='30;33;30' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='830' y='84' fill='violet'>
+<text x='900' y='94' fill='violet'>
   👾
-  <animate attributeName='y' values='84;87;84' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='94;97;94' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='830' y='100' fill='violet'>
+<text x='900' y='110' fill='violet'>
   👾
-  <animate attributeName='y' values='100;103;100' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='110;113;110' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='830' y='116' fill='violet'>
+<text x='900' y='126' fill='violet'>
   👾
-  <animate attributeName='y' values='116;119;116' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='126;129;126' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='846' y='84' fill='violet'>
+<text x='916' y='94' fill='violet'>
   👾
-  <animate attributeName='y' values='84;87;84' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='94;97;94' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='846' y='116' fill='violet'>
+<text x='916' y='126' fill='violet'>
   👾
-  <animate attributeName='y' values='116;119;116' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='126;129;126' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='862' y='36' fill='violet'>
+<text x='932' y='46' fill='violet'>
   👾
-  <animate attributeName='y' values='36;39;36' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='46;49;46' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='862' y='52' fill='violet'>
+<text x='932' y='62' fill='violet'>
   👾
-  <animate attributeName='y' values='52;55;52' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='62;65;62' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='862' y='116' fill='violet'>
+<text x='932' y='126' fill='violet'>
   👾
-  <animate attributeName='y' values='116;119;116' dur='0.6s' repeatCount='indefinite' />
+  <animate attributeName='y' values='126;129;126' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='46' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='0s' dur='2s' />
-</text>
-<line x1='51' y1='140' x2='51' y2='84' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='0.5s' dur='1s' />
-  <animate attributeName='y1' values='140;84' begin='0.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='84;74;84' begin='0.5s' dur='0.5s' fill='freeze' />
+<text x='30' y='90' fill='white'>🚀</text>
+<line x1='40' y1='95' x2='116' y2='94' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='0.0s' dur='0.7s' />
+  <animate attributeName='x2' values='40;116' begin='0.0s' dur='0.7s' fill='freeze' />
 </line>
-<text x='734' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='2s' dur='2s' />
-</text>
-<line x1='739' y1='140' x2='739' y2='52' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='2.5s' dur='1s' />
-  <animate attributeName='y1' values='140;52' begin='2.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='52;42;52' begin='2.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='0.7s' dur='0.1s' xlink:href='#invader0' />
+<line x1='40' y1='95' x2='804' y2='62' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='1.5s' dur='0.7s' />
+  <animate attributeName='x2' values='40;804' begin='1.5s' dur='0.7s' fill='freeze' />
 </line>
-<text x='750' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='4s' dur='2s' />
-</text>
-<line x1='755' y1='140' x2='755' y2='52' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='4.5s' dur='1s' />
-  <animate attributeName='y1' values='140;52' begin='4.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='52;42;52' begin='4.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='2.2s' dur='0.1s' xlink:href='#invader1' />
+<line x1='40' y1='95' x2='820' y2='62' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='3.0s' dur='0.7s' />
+  <animate attributeName='x2' values='40;820' begin='3.0s' dur='0.7s' fill='freeze' />
 </line>
-<text x='782' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='6s' dur='2s' />
-</text>
-<line x1='787' y1='140' x2='787' y2='52' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='6.5s' dur='1s' />
-  <animate attributeName='y1' values='140;52' begin='6.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='52;42;52' begin='6.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='3.7s' dur='0.1s' xlink:href='#invader2' />
+<line x1='40' y1='95' x2='852' y2='62' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='4.5s' dur='0.7s' />
+  <animate attributeName='x2' values='40;852' begin='4.5s' dur='0.7s' fill='freeze' />
 </line>
-<text x='814' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='8s' dur='2s' />
-</text>
-<line x1='819' y1='140' x2='819' y2='20' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='8.5s' dur='1s' />
-  <animate attributeName='y1' values='140;20' begin='8.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='20;10;20' begin='8.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='5.2s' dur='0.1s' xlink:href='#invader3' />
+<line x1='40' y1='95' x2='884' y2='30' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='6.0s' dur='0.7s' />
+  <animate attributeName='x2' values='40;884' begin='6.0s' dur='0.7s' fill='freeze' />
 </line>
-<text x='830' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='10s' dur='2s' />
-</text>
-<line x1='835' y1='140' x2='835' y2='20' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='10.5s' dur='1s' />
-  <animate attributeName='y1' values='140;20' begin='10.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='20;10;20' begin='10.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='6.7s' dur='0.1s' xlink:href='#invader4' />
+<line x1='40' y1='95' x2='900' y2='30' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='7.5s' dur='0.7s' />
+  <animate attributeName='x2' values='40;900' begin='7.5s' dur='0.7s' fill='freeze' />
 </line>
-<text x='830' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='12s' dur='2s' />
-</text>
-<line x1='835' y1='140' x2='835' y2='84' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='12.5s' dur='1s' />
-  <animate attributeName='y1' values='140;84' begin='12.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='84;74;84' begin='12.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='8.2s' dur='0.1s' xlink:href='#invader5' />
+<line x1='40' y1='95' x2='900' y2='94' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='9.0s' dur='0.7s' />
+  <animate attributeName='x2' values='40;900' begin='9.0s' dur='0.7s' fill='freeze' />
 </line>
-<text x='830' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='14s' dur='2s' />
-</text>
-<line x1='835' y1='140' x2='835' y2='100' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='14.5s' dur='1s' />
-  <animate attributeName='y1' values='140;100' begin='14.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='100;90;100' begin='14.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='9.7s' dur='0.1s' xlink:href='#invader6' />
+<line x1='40' y1='95' x2='900' y2='110' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='10.5s' dur='0.7s' />
+  <animate attributeName='x2' values='40;900' begin='10.5s' dur='0.7s' fill='freeze' />
 </line>
-<text x='830' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='16s' dur='2s' />
-</text>
-<line x1='835' y1='140' x2='835' y2='116' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='16.5s' dur='1s' />
-  <animate attributeName='y1' values='140;116' begin='16.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='116;106;116' begin='16.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='11.2s' dur='0.1s' xlink:href='#invader7' />
+<line x1='40' y1='95' x2='900' y2='126' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='12.0s' dur='0.7s' />
+  <animate attributeName='x2' values='40;900' begin='12.0s' dur='0.7s' fill='freeze' />
 </line>
-<text x='846' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='18s' dur='2s' />
-</text>
-<line x1='851' y1='140' x2='851' y2='84' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='18.5s' dur='1s' />
-  <animate attributeName='y1' values='140;84' begin='18.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='84;74;84' begin='18.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='12.7s' dur='0.1s' xlink:href='#invader8' />
+<line x1='40' y1='95' x2='916' y2='94' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='13.5s' dur='0.7s' />
+  <animate attributeName='x2' values='40;916' begin='13.5s' dur='0.7s' fill='freeze' />
 </line>
-<text x='846' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='20s' dur='2s' />
-</text>
-<line x1='851' y1='140' x2='851' y2='116' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='20.5s' dur='1s' />
-  <animate attributeName='y1' values='140;116' begin='20.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='116;106;116' begin='20.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='14.2s' dur='0.1s' xlink:href='#invader9' />
+<line x1='40' y1='95' x2='916' y2='126' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='15.0s' dur='0.7s' />
+  <animate attributeName='x2' values='40;916' begin='15.0s' dur='0.7s' fill='freeze' />
 </line>
-<text x='862' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='22s' dur='2s' />
-</text>
-<line x1='867' y1='140' x2='867' y2='36' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='22.5s' dur='1s' />
-  <animate attributeName='y1' values='140;36' begin='22.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='36;26;36' begin='22.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='15.7s' dur='0.1s' xlink:href='#invader10' />
+<line x1='40' y1='95' x2='932' y2='46' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='16.5s' dur='0.7s' />
+  <animate attributeName='x2' values='40;932' begin='16.5s' dur='0.7s' fill='freeze' />
 </line>
-<text x='862' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='24s' dur='2s' />
-</text>
-<line x1='867' y1='140' x2='867' y2='52' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='24.5s' dur='1s' />
-  <animate attributeName='y1' values='140;52' begin='24.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='52;42;52' begin='24.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='17.2s' dur='0.1s' xlink:href='#invader11' />
+<line x1='40' y1='95' x2='932' y2='62' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='18.0s' dur='0.7s' />
+  <animate attributeName='x2' values='40;932' begin='18.0s' dur='0.7s' fill='freeze' />
 </line>
-<text x='862' y='150' fill='white'>
-  🚀
-  <set attributeName='visibility' to='visible' begin='26s' dur='2s' />
-</text>
-<line x1='867' y1='140' x2='867' y2='116' stroke='yellow' stroke-width='1' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='26.5s' dur='1s' />
-  <animate attributeName='y1' values='140;116' begin='26.5s' dur='0.5s' fill='freeze' />
-  <animate attributeName='y2' values='116;106;116' begin='26.5s' dur='0.5s' fill='freeze' />
+<set attributeName='visibility' to='hidden' begin='18.7s' dur='0.1s' xlink:href='#invader12' />
+<line x1='40' y1='95' x2='932' y2='126' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='19.5s' dur='0.7s' />
+  <animate attributeName='x2' values='40;932' begin='19.5s' dur='0.7s' fill='freeze' />
 </line>
+<set attributeName='visibility' to='hidden' begin='20.2s' dur='0.1s' xlink:href='#invader13' />
 <text x='30' y='175' fill='white'>juniorschmitz</text>
 </svg>

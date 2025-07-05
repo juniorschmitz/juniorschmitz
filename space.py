@@ -70,24 +70,22 @@ def draw_svg(contributions):
             lines.append("</text>")
             active_cells.append((x, y))
 
-    # Nave animada
-    if active_cells:
-        path_x = ";".join(str(x) for x, _ in active_cells)
-        path_y = ";".join(str(ship_y - 5 + (i % 3) * 5) for i in range(len(active_cells)))
+    # Nave e tiros sincronizados por etapa
+    for idx, (x, y) in enumerate(active_cells):
+        delay = idx * 2  # delay em segundos por etapa
 
-        lines.append(f"<text x='{active_cells[0][0]}' y='{ship_y}' fill='white'>")
+        # Nave
+        lines.append(f"<text x='{x}' y='{ship_y}' fill='white'>")
         lines.append(f"  {SHIP}")
-        lines.append(f"  <animate attributeName='x' values='{path_x}' dur='8s' repeatCount='indefinite' />")
-        lines.append(f"  <animate attributeName='y' values='{path_y}' dur='2s' repeatCount='indefinite' />")
+        lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay}s' dur='2s' />")
         lines.append("</text>")
 
-        # Disparos animados
-        for idx, (x, y) in enumerate(active_cells):
-            shot_dur = 1 + (idx % 3) * 0.5
-            lines.append(f"<line x1='{x + 5}' y1='{ship_y - 10}' x2='{x + 5}' y2='{y}' stroke='yellow' stroke-width='1'>")
-            lines.append(f"  <animate attributeName='y1' values='{ship_y - 10};{y}' dur='{shot_dur}s' repeatCount='indefinite' />")
-            lines.append(f"  <animate attributeName='y2' values='{y};{y - 10};{y}' dur='{shot_dur}s' repeatCount='indefinite' />")
-            lines.append("</line>")
+        # Tiro
+        lines.append(f"<line x1='{x + 5}' y1='{ship_y - 10}' x2='{x + 5}' y2='{y}' stroke='yellow' stroke-width='1' visibility='hidden'>")
+        lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay + 0.5}s' dur='1s' />")
+        lines.append(f"  <animate attributeName='y1' values='{ship_y - 10};{y}' begin='{delay + 0.5}s' dur='0.5s' fill='freeze' />")
+        lines.append(f"  <animate attributeName='y2' values='{y};{y - 10};{y}' begin='{delay + 0.5}s' dur='0.5s' fill='freeze' />")
+        lines.append("</line>")
 
     lines.append(f"<text x='30' y='175' fill='white'>{USERNAME}</text>")
     lines.append(SVG_FOOTER)
@@ -104,4 +102,4 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ SVG com nave e tiros animados gerado com sucesso!")
+    print("✅ Nave sincronizada com disparos por commit gerada com sucesso!")

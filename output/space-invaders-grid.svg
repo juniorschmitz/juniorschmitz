@@ -1,4 +1,4 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='800' height='180' style='background:black;font-family:monospace;font-size:14px;'>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='180' style='background:black;font-family:monospace;font-size:14px;'>
 <text id='invader11' x='116' y='94' fill='violet'>
   👾
   <animate attributeName='y' values='94;97;94' dur='0.6s' repeatCount='indefinite' />
@@ -60,71 +60,99 @@
   <set attributeName='visibility' to='visible' begin='0.0s' dur='0.7s' />
   <animate attributeName='x2' values='40;116' begin='0.0s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='0.7s' xlink:href='#invader11' />
+<use xlink:href='#invader11'>
+  <set attributeName='visibility' to='hidden' begin='0.7s' />
+</use>
 <line x1='40' y1='95' x2='804' y2='62' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='1.5s' dur='0.7s' />
   <animate attributeName='x2' values='40;804' begin='1.5s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='2.2s' xlink:href='#invader310' />
+<use xlink:href='#invader310'>
+  <set attributeName='visibility' to='hidden' begin='2.2s' />
+</use>
 <line x1='40' y1='95' x2='820' y2='62' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='3.0s' dur='0.7s' />
   <animate attributeName='x2' values='40;820' begin='3.0s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='3.7s' xlink:href='#invader317' />
+<use xlink:href='#invader317'>
+  <set attributeName='visibility' to='hidden' begin='3.7s' />
+</use>
 <line x1='40' y1='95' x2='852' y2='62' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='4.5s' dur='0.7s' />
   <animate attributeName='x2' values='40;852' begin='4.5s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='5.2s' xlink:href='#invader331' />
+<use xlink:href='#invader331'>
+  <set attributeName='visibility' to='hidden' begin='5.2s' />
+</use>
 <line x1='40' y1='95' x2='884' y2='30' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='6.0s' dur='0.7s' />
   <animate attributeName='x2' values='40;884' begin='6.0s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='6.7s' xlink:href='#invader343' />
+<use xlink:href='#invader343'>
+  <set attributeName='visibility' to='hidden' begin='6.7s' />
+</use>
 <line x1='40' y1='95' x2='900' y2='30' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='7.5s' dur='0.7s' />
   <animate attributeName='x2' values='40;900' begin='7.5s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='8.2s' xlink:href='#invader350' />
+<use xlink:href='#invader350'>
+  <set attributeName='visibility' to='hidden' begin='8.2s' />
+</use>
 <line x1='40' y1='95' x2='900' y2='94' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='9.0s' dur='0.7s' />
   <animate attributeName='x2' values='40;900' begin='9.0s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='9.7s' xlink:href='#invader354' />
+<use xlink:href='#invader354'>
+  <set attributeName='visibility' to='hidden' begin='9.7s' />
+</use>
 <line x1='40' y1='95' x2='900' y2='110' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='10.5s' dur='0.7s' />
   <animate attributeName='x2' values='40;900' begin='10.5s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='11.2s' xlink:href='#invader355' />
+<use xlink:href='#invader355'>
+  <set attributeName='visibility' to='hidden' begin='11.2s' />
+</use>
 <line x1='40' y1='95' x2='900' y2='126' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='12.0s' dur='0.7s' />
   <animate attributeName='x2' values='40;900' begin='12.0s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='12.7s' xlink:href='#invader356' />
+<use xlink:href='#invader356'>
+  <set attributeName='visibility' to='hidden' begin='12.7s' />
+</use>
 <line x1='40' y1='95' x2='916' y2='94' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='13.5s' dur='0.7s' />
   <animate attributeName='x2' values='40;916' begin='13.5s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='14.2s' xlink:href='#invader361' />
+<use xlink:href='#invader361'>
+  <set attributeName='visibility' to='hidden' begin='14.2s' />
+</use>
 <line x1='40' y1='95' x2='916' y2='126' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='15.0s' dur='0.7s' />
   <animate attributeName='x2' values='40;916' begin='15.0s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='15.7s' xlink:href='#invader363' />
+<use xlink:href='#invader363'>
+  <set attributeName='visibility' to='hidden' begin='15.7s' />
+</use>
 <line x1='40' y1='95' x2='932' y2='46' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='16.5s' dur='0.7s' />
   <animate attributeName='x2' values='40;932' begin='16.5s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='17.2s' xlink:href='#invader365' />
+<use xlink:href='#invader365'>
+  <set attributeName='visibility' to='hidden' begin='17.2s' />
+</use>
 <line x1='40' y1='95' x2='932' y2='62' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='18.0s' dur='0.7s' />
   <animate attributeName='x2' values='40;932' begin='18.0s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='18.7s' xlink:href='#invader366' />
+<use xlink:href='#invader366'>
+  <set attributeName='visibility' to='hidden' begin='18.7s' />
+</use>
 <line x1='40' y1='95' x2='932' y2='126' stroke='yellow' stroke-width='1' visibility='hidden'>
   <set attributeName='visibility' to='visible' begin='19.5s' dur='0.7s' />
   <animate attributeName='x2' values='40;932' begin='19.5s' dur='0.7s' fill='freeze' />
 </line>
-<set attributeName='visibility' to='hidden' begin='20.2s' xlink:href='#invader370' />
+<use xlink:href='#invader370'>
+  <set attributeName='visibility' to='hidden' begin='20.2s' />
+</use>
 <text x='30' y='175' fill='white'>juniorschmitz</text>
 </svg>

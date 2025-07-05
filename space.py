@@ -11,7 +11,7 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' width='800' height='180' style='background:black;font-family:monospace;font-size:14px;'>"""
+SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='180' style='background:black;font-family:monospace;font-size:14px;'>"""
 SVG_FOOTER = "</svg>"
 
 INVADER = "👾"
@@ -83,7 +83,9 @@ def draw_svg(contributions):
         lines.append("</line>")
 
         # Invisibilizar alien após impacto
-        lines.append(f"<set attributeName='visibility' to='hidden' begin='{delay + 0.7}s' xlink:href='#{alien_id}' />")
+        lines.append(f"<use xlink:href='#{alien_id}'>")
+        lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + 0.7}s' />")
+        lines.append("</use>")
 
     lines.append(f"<text x='30' y='175' fill='white'>{USERNAME}</text>")
     lines.append(SVG_FOOTER)
@@ -92,7 +94,7 @@ def draw_svg(contributions):
 
 def save_svg(content, path="output/space-invaders-grid.svg"):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(content)
 
 
@@ -100,4 +102,4 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ Nave fixa atirando e eliminando alienígenas com sucesso!")
+    print("✅ SVG válido gerado com sucesso!")

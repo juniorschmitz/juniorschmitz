@@ -11,7 +11,7 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800' height='180' style='background:black;font-family:monospace;font-size:14px;'>"""
+SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='900' height='180' style='background:black;font-family:monospace;font-size:14px;'>"""
 SVG_FOOTER = "</svg>"
 
 INVADER = "👾"
@@ -24,6 +24,7 @@ def get_contributions():
       user(login: \"{USERNAME}\") {{
         contributionsCollection {{
           contributionCalendar {{
+            totalContributions
             weeks {{
               contributionDays {{
                 date
@@ -53,18 +54,25 @@ def draw_svg(contributions):
     cell_size = 14
     padding = 2
     x_start = 100
-    y_start = 30
+    y_start = 20
     ship_x = 30
 
     active_cells = []
 
     for i, day in enumerate(contributions):
-        y = y_start + (i % 7) * (cell_size + padding)
-        x = x_start + (i // 7) * (cell_size + padding)
+        col = i // 7
+        row = i % 7
+        y = y_start + row * (cell_size + padding)
+        x = x_start + col * (cell_size + padding)
 
         count = day['count']
+        alien_id = f"invader{i}"
+
+        # base: célula como fundo do grid
+        base_color = "#222"  # fundo escuro
+        lines.append(f"<rect x='{x}' y='{y - 12}' width='{cell_size}' height='{cell_size}' fill='{base_color}' rx='2' />")
+
         if count > 0:
-            alien_id = f"invader{i}"
             lines.append(f"<text id='{alien_id}' x='{x}' y='{y}' fill='violet'>")
             lines.append(f"  {INVADER}")
             lines.append(f"  <animate attributeName='y' values='{y};{y+3};{y}' dur='0.6s' repeatCount='indefinite' />")
@@ -74,7 +82,7 @@ def draw_svg(contributions):
     # Nave fixa à esquerda
     lines.append(f"<text x='{ship_x}' y='90' fill='white'>{SHIP}</text>")
 
-    # Tiros com delay e desativação dos alienígenas
+    # Tiros animados apenas para alienígenas reais
     for idx, (x, y, alien_id) in enumerate(active_cells):
         delay = idx * 1.5
         lines.append(f"<line x1='{ship_x + 10}' y1='95' x2='{x}' y2='{y}' stroke='yellow' stroke-width='1' visibility='hidden'>")
@@ -102,4 +110,4 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ SVG válido gerado com sucesso!")
+    print("✅ Grade completa com alienígenas baseada no gráfico de contribuições gerada com sucesso!")

@@ -57,64 +57,129 @@
 </text>
 <text x='46' y='150' fill='white'>
   🚀
-  <animate attributeName='x' values='46;734;750;782;814;830;830;830;830;846;846;862;862;862' dur='8s' repeatCount='indefinite' />
-  <animate attributeName='y' values='145;150;155;145;150;155;145;150;155;145;150;155;145;150' dur='2s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='0s' dur='2s' />
 </text>
-<line x1='51' y1='140' x2='51' y2='84' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;84' dur='1.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='84;74;84' dur='1.0s' repeatCount='indefinite' />
+<line x1='51' y1='140' x2='51' y2='84' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='0.5s' dur='1s' />
+  <animate attributeName='y1' values='140;84' begin='0.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='84;74;84' begin='0.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='739' y1='140' x2='739' y2='52' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;52' dur='1.5s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='52;42;52' dur='1.5s' repeatCount='indefinite' />
+<text x='734' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='2s' dur='2s' />
+</text>
+<line x1='739' y1='140' x2='739' y2='52' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='2.5s' dur='1s' />
+  <animate attributeName='y1' values='140;52' begin='2.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='52;42;52' begin='2.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='755' y1='140' x2='755' y2='52' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;52' dur='2.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='52;42;52' dur='2.0s' repeatCount='indefinite' />
+<text x='750' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='4s' dur='2s' />
+</text>
+<line x1='755' y1='140' x2='755' y2='52' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='4.5s' dur='1s' />
+  <animate attributeName='y1' values='140;52' begin='4.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='52;42;52' begin='4.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='787' y1='140' x2='787' y2='52' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;52' dur='1.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='52;42;52' dur='1.0s' repeatCount='indefinite' />
+<text x='782' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='6s' dur='2s' />
+</text>
+<line x1='787' y1='140' x2='787' y2='52' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='6.5s' dur='1s' />
+  <animate attributeName='y1' values='140;52' begin='6.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='52;42;52' begin='6.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='819' y1='140' x2='819' y2='20' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;20' dur='1.5s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='20;10;20' dur='1.5s' repeatCount='indefinite' />
+<text x='814' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='8s' dur='2s' />
+</text>
+<line x1='819' y1='140' x2='819' y2='20' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='8.5s' dur='1s' />
+  <animate attributeName='y1' values='140;20' begin='8.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='20;10;20' begin='8.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='835' y1='140' x2='835' y2='20' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;20' dur='2.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='20;10;20' dur='2.0s' repeatCount='indefinite' />
+<text x='830' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='10s' dur='2s' />
+</text>
+<line x1='835' y1='140' x2='835' y2='20' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='10.5s' dur='1s' />
+  <animate attributeName='y1' values='140;20' begin='10.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='20;10;20' begin='10.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='835' y1='140' x2='835' y2='84' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;84' dur='1.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='84;74;84' dur='1.0s' repeatCount='indefinite' />
+<text x='830' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='12s' dur='2s' />
+</text>
+<line x1='835' y1='140' x2='835' y2='84' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='12.5s' dur='1s' />
+  <animate attributeName='y1' values='140;84' begin='12.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='84;74;84' begin='12.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='835' y1='140' x2='835' y2='100' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;100' dur='1.5s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='100;90;100' dur='1.5s' repeatCount='indefinite' />
+<text x='830' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='14s' dur='2s' />
+</text>
+<line x1='835' y1='140' x2='835' y2='100' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='14.5s' dur='1s' />
+  <animate attributeName='y1' values='140;100' begin='14.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='100;90;100' begin='14.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='835' y1='140' x2='835' y2='116' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;116' dur='2.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='116;106;116' dur='2.0s' repeatCount='indefinite' />
+<text x='830' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='16s' dur='2s' />
+</text>
+<line x1='835' y1='140' x2='835' y2='116' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='16.5s' dur='1s' />
+  <animate attributeName='y1' values='140;116' begin='16.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='116;106;116' begin='16.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='851' y1='140' x2='851' y2='84' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;84' dur='1.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='84;74;84' dur='1.0s' repeatCount='indefinite' />
+<text x='846' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='18s' dur='2s' />
+</text>
+<line x1='851' y1='140' x2='851' y2='84' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='18.5s' dur='1s' />
+  <animate attributeName='y1' values='140;84' begin='18.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='84;74;84' begin='18.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='851' y1='140' x2='851' y2='116' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;116' dur='1.5s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='116;106;116' dur='1.5s' repeatCount='indefinite' />
+<text x='846' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='20s' dur='2s' />
+</text>
+<line x1='851' y1='140' x2='851' y2='116' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='20.5s' dur='1s' />
+  <animate attributeName='y1' values='140;116' begin='20.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='116;106;116' begin='20.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='867' y1='140' x2='867' y2='36' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;36' dur='2.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='36;26;36' dur='2.0s' repeatCount='indefinite' />
+<text x='862' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='22s' dur='2s' />
+</text>
+<line x1='867' y1='140' x2='867' y2='36' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='22.5s' dur='1s' />
+  <animate attributeName='y1' values='140;36' begin='22.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='36;26;36' begin='22.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='867' y1='140' x2='867' y2='52' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;52' dur='1.0s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='52;42;52' dur='1.0s' repeatCount='indefinite' />
+<text x='862' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='24s' dur='2s' />
+</text>
+<line x1='867' y1='140' x2='867' y2='52' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='24.5s' dur='1s' />
+  <animate attributeName='y1' values='140;52' begin='24.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='52;42;52' begin='24.5s' dur='0.5s' fill='freeze' />
 </line>
-<line x1='867' y1='140' x2='867' y2='116' stroke='yellow' stroke-width='1'>
-  <animate attributeName='y1' values='140;116' dur='1.5s' repeatCount='indefinite' />
-  <animate attributeName='y2' values='116;106;116' dur='1.5s' repeatCount='indefinite' />
+<text x='862' y='150' fill='white'>
+  🚀
+  <set attributeName='visibility' to='visible' begin='26s' dur='2s' />
+</text>
+<line x1='867' y1='140' x2='867' y2='116' stroke='yellow' stroke-width='1' visibility='hidden'>
+  <set attributeName='visibility' to='visible' begin='26.5s' dur='1s' />
+  <animate attributeName='y1' values='140;116' begin='26.5s' dur='0.5s' fill='freeze' />
+  <animate attributeName='y2' values='116;106;116' begin='26.5s' dur='0.5s' fill='freeze' />
 </line>
 <text x='30' y='175' fill='white'>juniorschmitz</text>
 </svg>

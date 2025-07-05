@@ -52,7 +52,7 @@ def draw_svg(contributions):
     lines = [SVG_HEADER]
     cell_size = 14
     padding = 2
-    x_start = 100  # alienígenas mais à direita
+    x_start = 100
     y_start = 30
     ship_x = 30
 
@@ -64,17 +64,18 @@ def draw_svg(contributions):
 
         count = day['count']
         if count > 0:
-            lines.append(f"<text x='{x}' y='{y}' fill='violet'>")
+            alien_id = f"invader{i}"
+            lines.append(f"<text id='{alien_id}' x='{x}' y='{y}' fill='violet'>")
             lines.append(f"  {INVADER}")
             lines.append(f"  <animate attributeName='y' values='{y};{y+3};{y}' dur='0.6s' repeatCount='indefinite' />")
             lines.append("</text>")
-            active_cells.append((x, y))
+            active_cells.append((x, y, alien_id))
 
     # Nave fixa à esquerda
     lines.append(f"<text x='{ship_x}' y='90' fill='white'>{SHIP}</text>")
 
-    # Tiros com delay, da esquerda para a direita
-    for idx, (x, y) in enumerate(active_cells):
+    # Tiros com delay e desativação dos alienígenas
+    for idx, (x, y, alien_id) in enumerate(active_cells):
         delay = idx * 1.5
         lines.append(f"<line x1='{ship_x + 10}' y1='95' x2='{x}' y2='{y}' stroke='yellow' stroke-width='1' visibility='hidden'>")
         lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay}s' dur='0.7s' />")
@@ -82,7 +83,7 @@ def draw_svg(contributions):
         lines.append("</line>")
 
         # Invisibilizar alien após impacto
-        lines.append(f"<set attributeName='visibility' to='hidden' begin='{delay + 0.7}s' dur='0.1s' xlink:href='#invader{idx}' />")
+        lines.append(f"<set attributeName='visibility' to='hidden' begin='{delay + 0.7}s' xlink:href='#{alien_id}' />")
 
     lines.append(f"<text x='30' y='175' fill='white'>{USERNAME}</text>")
     lines.append(SVG_FOOTER)
@@ -99,4 +100,4 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ Nave fixa atirando da esquerda para direita gerada com sucesso!")
+    print("✅ Nave fixa atirando e eliminando alienígenas com sucesso!")

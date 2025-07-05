@@ -1,6 +1,3 @@
-# space_invaders_generator.py
-# Gera um SVG estilo Space Invaders baseado no número de commits
-
 import requests
 from datetime import datetime, timedelta
 import os
@@ -12,9 +9,9 @@ API_URL = f"https://api.github.com/users/{USERNAME}/events"
 HEADERS = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
 
 # Cores e dimensões
-ENEMY = "👾"
+ENEMY = "🚫"  # novo invasor com emoji mais distinto
 SHIP = "🚀"
-BLOCK = "🟪"
+BLOCK = "🔪"
 
 SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' style='background:black;font-family:monospace;font-size:20px;'>"""
 SVG_FOOTER = "</svg>"
@@ -32,7 +29,7 @@ def fetch_commit_days():
 def draw_svg(commit_days):
     lines = [SVG_HEADER]
 
-    # Invasores (dias com commits)
+    # Invasores com animação
     today = datetime.utcnow().date()
     for i in range(5):
         for j in range(10):
@@ -40,7 +37,10 @@ def draw_svg(commit_days):
             if day in commit_days:
                 x = 30 + j * 50
                 y = 30 + i * 40
-                lines.append(f"<text x='{x}' y='{y}' fill='lime'>{ENEMY}</text>")
+                lines.append(f"<text x='{x}' y='{y}' fill='violet'>")
+                lines.append(f"  {ENEMY}")
+                lines.append(f"  <animate attributeName='y' values='{y};{y+5};{y}' dur='0.6s' repeatCount='indefinite' />")
+                lines.append("</text>")
 
     # Nave do jogador
     lines.append("<text x='270' y='380' fill='white'>🚀</text>")

@@ -1,11 +1,15 @@
 # .github/workflows/invaders.yml
 
+
 name: 🚀 Space Invaders SVG Generator
 
 on:
   schedule:
     - cron: '0 3 * * *'  # Executa diariamente às 03:00 UTC
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate-svg:

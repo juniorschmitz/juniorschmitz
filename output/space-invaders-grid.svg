@@ -1,14 +1,60 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400' style='background:black;font-family:monospace;font-size:20px;'>
-<text x='30' y='30' fill='violet'>
-  🚫
-  <animate attributeName='y' values='30;35;30' dur='0.6s' repeatCount='indefinite' />
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='160' style='background:black;font-family:monospace;font-size:14px;'>
+<text x='46' y='84' fill='violet'>
+  👾
+  <animate attributeName='y' values='84;87;84' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='180' y='30' fill='violet'>
-  🚫
-  <animate attributeName='y' values='30;35;30' dur='0.6s' repeatCount='indefinite' />
+<text x='734' y='52' fill='violet'>
+  👾
+  <animate attributeName='y' values='52;55;52' dur='0.6s' repeatCount='indefinite' />
 </text>
-<text x='270' y='380' fill='white'>🚀</text>
-<text x='250' y='395' fill='white'>juniorschmitz</text>
-<text x='150' y='350' fill='violet'>🔪 Tests</text>
-<text x='350' y='350' fill='violet'>🔪 CI/CD</text>
+<text x='750' y='52' fill='violet'>
+  👾
+  <animate attributeName='y' values='52;55;52' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='782' y='52' fill='violet'>
+  👾
+  <animate attributeName='y' values='52;55;52' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='814' y='20' fill='violet'>
+  👾
+  <animate attributeName='y' values='20;23;20' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='830' y='20' fill='violet'>
+  👾
+  <animate attributeName='y' values='20;23;20' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='830' y='84' fill='violet'>
+  👾
+  <animate attributeName='y' values='84;87;84' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='830' y='100' fill='violet'>
+  👾
+  <animate attributeName='y' values='100;103;100' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='830' y='116' fill='violet'>
+  👾
+  <animate attributeName='y' values='116;119;116' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='846' y='84' fill='violet'>
+  👾
+  <animate attributeName='y' values='84;87;84' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='846' y='116' fill='violet'>
+  👾
+  <animate attributeName='y' values='116;119;116' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='862' y='36' fill='violet'>
+  👾
+  <animate attributeName='y' values='36;39;36' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='862' y='52' fill='violet'>
+  👾
+  <animate attributeName='y' values='52;55;52' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='862' y='116' fill='violet'>
+  👾
+  <animate attributeName='y' values='116;119;116' dur='0.6s' repeatCount='indefinite' />
+</text>
+<text x='446' y='145' fill='white'>🚀</text>
+<text x='30' y='155' fill='white'>juniorschmitz</text>
 </svg>

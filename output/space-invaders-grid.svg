@@ -368,7 +368,7 @@
 <text id='alien_0_0' x='100' y='84' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='84;87;84' dur='0.6s' begin='0.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='0.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='0.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='0.0s' dur='1s' fill='freeze' />
@@ -380,7 +380,7 @@
 <text id='alien_0_1' x='788' y='52' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='52;55;52' dur='0.6s' begin='1.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='2.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='1.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='1.5s' dur='1s' fill='freeze' />
@@ -392,7 +392,7 @@
 <text id='alien_0_2' x='804' y='52' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='52;55;52' dur='0.6s' begin='3.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='3.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='3.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='3.0s' dur='1s' fill='freeze' />
@@ -404,7 +404,7 @@
 <text id='alien_0_3' x='836' y='52' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='52;55;52' dur='0.6s' begin='4.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='5.300000000000001s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='4.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='4.5s' dur='1s' fill='freeze' />
@@ -416,7 +416,7 @@
 <text id='alien_0_4' x='868' y='20' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='20;23;20' dur='0.6s' begin='6.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='6.800000000000001s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='6.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='6.0s' dur='1s' fill='freeze' />
@@ -428,7 +428,7 @@
 <text id='alien_0_5' x='884' y='20' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='20;23;20' dur='0.6s' begin='7.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='8.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='7.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='7.5s' dur='1s' fill='freeze' />
@@ -440,7 +440,7 @@
 <text id='alien_0_6' x='884' y='84' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='84;87;84' dur='0.6s' begin='9.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='9.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='9.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='9.0s' dur='1s' fill='freeze' />
@@ -452,7 +452,7 @@
 <text id='alien_0_7' x='884' y='100' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='100;103;100' dur='0.6s' begin='10.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='11.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='10.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;100;90' begin='10.5s' dur='1s' fill='freeze' />
@@ -464,7 +464,7 @@
 <text id='alien_0_8' x='884' y='116' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='116;119;116' dur='0.6s' begin='12.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='12.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='12.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='12.0s' dur='1s' fill='freeze' />
@@ -476,7 +476,7 @@
 <text id='alien_0_9' x='900' y='84' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='84;87;84' dur='0.6s' begin='13.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='14.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='13.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='13.5s' dur='1s' fill='freeze' />
@@ -488,7 +488,7 @@
 <text id='alien_0_10' x='900' y='116' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='116;119;116' dur='0.6s' begin='15.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='15.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='15.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='15.0s' dur='1s' fill='freeze' />
@@ -500,7 +500,7 @@
 <text id='alien_0_11' x='916' y='36' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='36;39;36' dur='0.6s' begin='16.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='17.299999999999997s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='16.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;36;90' begin='16.5s' dur='1s' fill='freeze' />
@@ -512,7 +512,7 @@
 <text id='alien_0_12' x='916' y='52' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='52;55;52' dur='0.6s' begin='18.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='18.799999999999997s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='18.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='18.0s' dur='1s' fill='freeze' />
@@ -524,7 +524,7 @@
 <text id='alien_0_13' x='916' y='116' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='116;119;116' dur='0.6s' begin='19.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='20.299999999999997s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='19.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='19.5s' dur='1s' fill='freeze' />
@@ -536,7 +536,7 @@
 <text id='alien_0_14' x='932' y='20' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='20;23;20' dur='0.6s' begin='21.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='21.799999999999997s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='21.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='21.0s' dur='1s' fill='freeze' />
@@ -548,7 +548,7 @@
 <text id='alien_1_0' x='100' y='84' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='84;87;84' dur='0.6s' begin='25.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='26.299999999999997s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='25.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='25.5s' dur='1s' fill='freeze' />
@@ -560,7 +560,7 @@
 <text id='alien_1_1' x='788' y='52' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='52;55;52' dur='0.6s' begin='27.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='27.799999999999997s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='27.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='27.0s' dur='1s' fill='freeze' />
@@ -572,7 +572,7 @@
 <text id='alien_1_2' x='804' y='52' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='52;55;52' dur='0.6s' begin='28.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='29.299999999999997s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='28.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='28.5s' dur='1s' fill='freeze' />
@@ -584,7 +584,7 @@
 <text id='alien_1_3' x='836' y='52' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='52;55;52' dur='0.6s' begin='30.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='30.799999999999997s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='30.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='30.0s' dur='1s' fill='freeze' />
@@ -596,7 +596,7 @@
 <text id='alien_1_4' x='868' y='20' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='20;23;20' dur='0.6s' begin='31.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='32.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='31.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='31.5s' dur='1s' fill='freeze' />
@@ -608,7 +608,7 @@
 <text id='alien_1_5' x='884' y='20' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='20;23;20' dur='0.6s' begin='33.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='33.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='33.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='33.0s' dur='1s' fill='freeze' />
@@ -620,7 +620,7 @@
 <text id='alien_1_6' x='884' y='84' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='84;87;84' dur='0.6s' begin='34.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='35.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='34.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='34.5s' dur='1s' fill='freeze' />
@@ -632,7 +632,7 @@
 <text id='alien_1_7' x='884' y='100' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='100;103;100' dur='0.6s' begin='36.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='36.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='36.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;100;90' begin='36.0s' dur='1s' fill='freeze' />
@@ -644,7 +644,7 @@
 <text id='alien_1_8' x='884' y='116' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='116;119;116' dur='0.6s' begin='37.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='38.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='37.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='37.5s' dur='1s' fill='freeze' />
@@ -656,7 +656,7 @@
 <text id='alien_1_9' x='900' y='84' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='84;87;84' dur='0.6s' begin='39.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='39.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='39.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='39.0s' dur='1s' fill='freeze' />
@@ -668,7 +668,7 @@
 <text id='alien_1_10' x='900' y='116' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='116;119;116' dur='0.6s' begin='40.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='41.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='40.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='40.5s' dur='1s' fill='freeze' />
@@ -680,7 +680,7 @@
 <text id='alien_1_11' x='916' y='36' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='36;39;36' dur='0.6s' begin='42.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='42.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='42.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;36;90' begin='42.0s' dur='1s' fill='freeze' />
@@ -692,7 +692,7 @@
 <text id='alien_1_12' x='916' y='52' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='52;55;52' dur='0.6s' begin='43.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='44.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='43.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='43.5s' dur='1s' fill='freeze' />
@@ -704,7 +704,7 @@
 <text id='alien_1_13' x='916' y='116' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='116;119;116' dur='0.6s' begin='45.0s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='45.8s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='45.4s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='45.0s' dur='1s' fill='freeze' />
@@ -716,7 +716,7 @@
 <text id='alien_1_14' x='932' y='20' fill='violet' visibility='visible'>
   👾
   <animate attributeName='y' values='20;23;20' dur='0.6s' begin='46.5s' repeatCount='5' />
-  <set attributeName='visibility' to='hidden' begin='47.3s' />
+  <animate attributeName='fill' values='violet;#ffb3ff' begin='46.9s' dur='0.2s' fill='freeze' />
   <set attributeName='visibility' to='visible' begin='51.0s' />
 </text>
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='46.5s' dur='1s' fill='freeze' />

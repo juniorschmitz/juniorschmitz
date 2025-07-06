@@ -86,7 +86,7 @@ def draw_svg(contributions):
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
     tiro_duracao = 0.4
-    total_duration = len(active_cells) * 1.5 + 3  # animação completa
+    total_duration = len(active_cells) * 1.5 + 3
 
     for idx, (target_x, target_y, alien_id, cell_index) in enumerate(active_cells):
         delay = idx * 1.5
@@ -105,14 +105,14 @@ def draw_svg(contributions):
         lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
         lines.append("</rect>")
 
-        # Alien desaparece no impacto e reaparece ao final da animação total
+        # Alienígena controlado por <use>
         lines.append(f"<use xlink:href='#{alien_id}' x='{target_x}' y='{target_y}' visibility='visible'>")
         lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
         lines.append(f"  <set attributeName='visibility' to='visible' begin='{total_duration}s' />")
         lines.append("</use>")
 
-    # Repetição controlada com <animate> no ship y
-    lines.append(f"<animate xlink:href='#ship' attributeName='y' from='{ship_y_default}' to='{ship_y_default}' begin='{total_duration}s' dur='0.1s' fill='freeze' />")
+    # Reset geral com início do loop
+    lines.append(f"<animate xlink:href='#ship' attributeName='y' from='{ship_y_default}' to='{ship_y_default}' begin='{total_duration}s' dur='0.01s' fill='freeze' repeatCount='indefinite' />")
 
     lines.append(f"<text x='30' y='175' fill='white'>{USERNAME}</text>")
     lines.append(SVG_FOOTER)
@@ -129,4 +129,4 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ Loop suave adicionado: animação reinicia somente ao fim completo do ciclo")
+    print("✅ Reset automático ao final do ciclo completo implementado!")

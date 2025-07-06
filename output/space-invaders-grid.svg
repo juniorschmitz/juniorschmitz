@@ -455,155 +455,156 @@
   </text>
 </g>
 <text id='ship' x='30' y='90' fill='white'>🚀</text>
-<animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='0.0s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='0.0s' dur='1s' fill='freeze' />
 <rect id='bullet0' x='40' y='83' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='0.4s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='100' begin='0.4s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='1.0s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='0.4s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='100' begin='0.4s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='1.0s' />
 </rect>
 <use xlink:href='#invader4' x='100' y='84' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='0.8s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='0.8s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='1.5s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='1.5s' dur='1s' fill='freeze' />
 <rect id='bullet1' x='40' y='51' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='1.9s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='788' begin='1.9s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='2.5s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='1.9s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='788' begin='1.9s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='2.5s' />
 </rect>
 <use xlink:href='#invader303' x='788' y='52' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='2.3s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='2.3s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='3.0s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='3.0s' dur='1s' fill='freeze' />
 <rect id='bullet2' x='40' y='51' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='3.4s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='804' begin='3.4s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='4.0s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='3.4s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='804' begin='3.4s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='4.0s' />
 </rect>
 <use xlink:href='#invader310' x='804' y='52' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='3.8s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='3.8s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='4.5s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='4.5s' dur='1s' fill='freeze' />
 <rect id='bullet3' x='40' y='51' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='4.9s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='836' begin='4.9s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='5.5s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='4.9s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='836' begin='4.9s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='5.5s' />
 </rect>
 <use xlink:href='#invader324' x='836' y='52' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='5.300000000000001s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='5.300000000000001s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='6.0s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='6.0s' dur='1s' fill='freeze' />
 <rect id='bullet4' x='40' y='19' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='6.4s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='868' begin='6.4s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='7.0s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='6.4s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='868' begin='6.4s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='7.0s' />
 </rect>
 <use xlink:href='#invader336' x='868' y='20' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='6.800000000000001s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='6.800000000000001s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='7.5s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='7.5s' dur='1s' fill='freeze' />
 <rect id='bullet5' x='40' y='19' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='7.9s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='884' begin='7.9s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='8.5s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='7.9s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='884' begin='7.9s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='8.5s' />
 </rect>
 <use xlink:href='#invader343' x='884' y='20' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='8.3s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='8.3s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='9.0s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='9.0s' dur='1s' fill='freeze' />
 <rect id='bullet6' x='40' y='83' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='9.4s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='884' begin='9.4s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='10.0s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='9.4s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='884' begin='9.4s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='10.0s' />
 </rect>
 <use xlink:href='#invader347' x='884' y='84' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='9.8s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='9.8s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;100;90' begin='10.5s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;100;90' begin='10.5s' dur='1s' fill='freeze' />
 <rect id='bullet7' x='40' y='99' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='10.9s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='884' begin='10.9s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='11.5s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='10.9s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='884' begin='10.9s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='11.5s' />
 </rect>
 <use xlink:href='#invader348' x='884' y='100' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='11.3s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='11.3s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='12.0s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='12.0s' dur='1s' fill='freeze' />
 <rect id='bullet8' x='40' y='115' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='12.4s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='884' begin='12.4s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='13.0s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='12.4s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='884' begin='12.4s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='13.0s' />
 </rect>
 <use xlink:href='#invader349' x='884' y='116' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='12.8s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='12.8s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='13.5s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;84;90' begin='13.5s' dur='1s' fill='freeze' />
 <rect id='bullet9' x='40' y='83' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='13.9s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='900' begin='13.9s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='14.5s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='13.9s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='900' begin='13.9s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='14.5s' />
 </rect>
 <use xlink:href='#invader354' x='900' y='84' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='14.3s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='14.3s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='15.0s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='15.0s' dur='1s' fill='freeze' />
 <rect id='bullet10' x='40' y='115' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='15.4s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='900' begin='15.4s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='16.0s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='15.4s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='900' begin='15.4s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='16.0s' />
 </rect>
 <use xlink:href='#invader356' x='900' y='116' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='15.8s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='15.8s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;36;90' begin='16.5s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;36;90' begin='16.5s' dur='1s' fill='freeze' />
 <rect id='bullet11' x='40' y='35' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='16.9s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='916' begin='16.9s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='17.5s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='16.9s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='916' begin='16.9s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='17.5s' />
 </rect>
 <use xlink:href='#invader358' x='916' y='36' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='17.299999999999997s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='17.299999999999997s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='18.0s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;52;90' begin='18.0s' dur='1s' fill='freeze' />
 <rect id='bullet12' x='40' y='51' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='18.4s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='916' begin='18.4s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='19.0s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='18.4s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='916' begin='18.4s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='19.0s' />
 </rect>
 <use xlink:href='#invader359' x='916' y='52' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='18.799999999999997s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='18.799999999999997s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='19.5s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;116;90' begin='19.5s' dur='1s' fill='freeze' />
 <rect id='bullet13' x='40' y='115' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='19.9s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='916' begin='19.9s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='20.5s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='19.9s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='916' begin='19.9s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='20.5s' />
 </rect>
 <use xlink:href='#invader363' x='916' y='116' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='20.299999999999997s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='20.299999999999997s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='21.0s' dur='1s' fill='remove' repeatCount='indefinite' />
+<animate xlink:href='#ship' attributeName='y' values='90;20;90' begin='21.0s' dur='1s' fill='freeze' />
 <rect id='bullet14' x='40' y='19' width='6' height='2' fill='yellow' visibility='hidden'>
-  <set attributeName='visibility' to='visible' begin='21.4s' dur='0.4s' repeatCount='indefinite' />
-  <animate attributeName='x' from='40' to='932' begin='21.4s' dur='0.4s' fill='remove' repeatCount='indefinite' />
-  <set attributeName='visibility' to='hidden' begin='22.0s' repeatCount='indefinite' />
+  <set attributeName='visibility' to='visible' begin='21.4s' dur='0.4s' />
+  <animate attributeName='x' from='40' to='932' begin='21.4s' dur='0.4s' fill='freeze' />
+  <set attributeName='visibility' to='hidden' begin='22.0s' />
 </rect>
 <use xlink:href='#invader364' x='932' y='20' visibility='visible'>
-  <set attributeName='visibility' to='hidden' begin='21.799999999999997s' dur='0.1s' repeatCount='indefinite' />
-  <set attributeName='visibility' to='visible' begin='24.5s' />
+  <set attributeName='visibility' to='hidden' begin='21.799999999999997s' />
+  <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
+<animate xlink:href='#ship' attributeName='y' from='90' to='90' begin='25.5s' dur='0.1s' fill='freeze' />
 <text x='30' y='175' fill='white'>juniorschmitz</text>
 </svg>

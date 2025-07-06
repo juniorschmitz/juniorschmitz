@@ -1,3 +1,4 @@
+
 import requests
 from datetime import datetime
 import os
@@ -46,6 +47,7 @@ def get_contributions():
                 'date': day['date'],
                 'count': day['contributionCount']
             })
+    print(f"🔍 Total de dias carregados: {len(days)}")
     return days
 
 
@@ -76,32 +78,30 @@ def draw_svg(contributions):
             lines.append(f"<text id='{alien_id}' x='{x}' y='{y}' fill='violet'>")
             lines.append(f"  {INVADER}")
             lines.append(f"  <animate attributeName='y' values='{y};{y+3};{y}' dur='0.6s' repeatCount='indefinite' />")
+            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{(i * 1.5) + 1.0}s' />")  # alien desaparece no impacto
             lines.append("</text>")
-            active_cells.append((x, y, alien_id))
+            active_cells.append((x, y, alien_id, i))
 
     # Nave única com ID fixo
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
     tiro_duracao = 0.5
-    for idx, (target_x, target_y, alien_id) in enumerate(active_cells):
+    for idx, (target_x, target_y, alien_id, cell_index) in enumerate(active_cells):
         delay = idx * 1.5
-        impact_time = delay + 0.5 + tiro_duracao
 
         # Anima a nave até a altura do alvo
         lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y}' begin='{delay}s' dur='0.4s' fill='freeze' />")
 
-        # Tiro animado horizontalmente (começa curto e cresce)
+        # Tiro animado curto + some
         x1 = ship_x + 10
         x2 = target_x
         y = target_y
 
-        lines.append(f"<line x1='{x1}' y1='{y}' x2='{x1}' y2='{y}' stroke='yellow' stroke-width='1' visibility='hidden'>")
+        lines.append(f"<line id='laser{idx}' x1='{x1}' y1='{y}' x2='{x1}' y2='{y}' stroke='yellow' stroke-width='1' visibility='hidden'>")
         lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay + 0.5}s' dur='{tiro_duracao}s' />")
         lines.append(f"  <animate attributeName='x2' values='{x1};{x2}' begin='{delay + 0.5}s' dur='{tiro_duracao}s' fill='freeze' />")
+        lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
         lines.append("</line>")
-
-        # Alienígena some no impacto (agora diretamente no <text> original)
-        lines.append(f"<set xlink:href='#{alien_id}' attributeName='visibility' to='hidden' begin='{impact_time}s' />")
 
     lines.append(f"<text x='30' y='175' fill='white'>{USERNAME}</text>")
     lines.append(SVG_FOOTER)
@@ -118,4 +118,4 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ Tiros animados e alienígenas desaparecendo no impacto!")
+    print("✅ Tiro curto + alienígenas desaparecendo no impacto + verificação total de contribuições!")

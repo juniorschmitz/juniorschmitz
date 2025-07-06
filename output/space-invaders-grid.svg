@@ -725,5 +725,4 @@
   <animate attributeName='x' from='40' to='932' begin='46.9s' dur='0.4s' fill='freeze' />
   <set attributeName='visibility' to='hidden' begin='47.5s' />
 </rect>
-<text x='350' y='195' fill='white' font-size='16'>Commit Invaders</text>
 </svg>

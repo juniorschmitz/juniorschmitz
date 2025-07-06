@@ -68,19 +68,12 @@ def draw_svg(contributions):
         x = x_start + col * (cell_size + padding)
 
         count = day['count']
+        if count > 0:
+            active_cells.append((x, y, i))
 
         base_color = "#222"
         lines.append(f"<rect x='{x}' y='{y - 12}' width='{cell_size}' height='{cell_size}' fill='{base_color}' rx='2' />")
 
-        if count > 0:
-            active_cells.append((x, y, i))
-
-    # Definição única do alien
-    lines.append(f"<g id='invader'>")
-    lines.append(f"  <text x='0' y='0' fill='violet'>{INVADER}</text>")
-    lines.append("</g>")
-
-    # Nave única
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
     tiro_duracao = 0.4
@@ -93,14 +86,14 @@ def draw_svg(contributions):
             delay = idx * 1.5 + offset
             impact_time = delay + tiro_duracao
 
-            use_id = f"use-alien-{loop}-{idx}"
-
-            # Alien como use
-            lines.append(f"<use id='{use_id}' xlink:href='#invader' x='{target_x}' y='{target_y}' visibility='visible'>")
+            # Grupo alienígena com controle de visibilidade
+            alien_id = f"alien{loop}_{idx}"
+            lines.append(f"<g id='{alien_id}' visibility='visible'>")
+            lines.append(f"  <text x='{target_x}' y='{target_y}' fill='violet'>{INVADER}</text>")
             lines.append(f"  <animate attributeName='y' values='{target_y};{target_y + 3};{target_y}' dur='0.6s' begin='{delay}s' repeatCount='5' />")
             lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
             lines.append(f"  <set attributeName='visibility' to='visible' begin='{offset + total_duration}s' />")
-            lines.append("</use>")
+            lines.append("</g>")
 
             # Nave se move
             lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='freeze' />")

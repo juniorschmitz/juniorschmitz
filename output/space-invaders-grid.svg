@@ -605,6 +605,6 @@
   <set attributeName='visibility' to='hidden' begin='21.799999999999997s' />
   <set attributeName='visibility' to='visible' begin='25.5s' />
 </use>
-<animate xlink:href='#ship' attributeName='y' from='90' to='90' begin='25.5s' dur='0.1s' fill='freeze' />
+<animate xlink:href='#ship' attributeName='y' from='90' to='90' begin='25.5s' dur='0.01s' fill='freeze' repeatCount='indefinite' />
 <text x='30' y='175' fill='white'>juniorschmitz</text>
 </svg>

@@ -11,7 +11,7 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='900' height='180' style='background:black;font-family:monospace;font-size:14px;'>"""
+SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='900' height='200' style='background:black;font-family:monospace;font-size:14px;'>"""
 SVG_FOOTER = "</svg>"
 
 INVADER = "👾"
@@ -107,6 +107,9 @@ def draw_svg(contributions):
                 lines.append(f"  <animate attributeName='x' from='{x1}' to='{x2}' begin='{delay + 0.4}s' dur='{tiro_duracao}s' fill='freeze' />")
                 lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
                 lines.append("</rect>")
+
+    # Texto inferior
+    lines.append("<text x='350' y='195' fill='white' font-size='16'>Commit Invaders</text>")
 
     lines.append(SVG_FOOTER)
     return "\n".join(lines)

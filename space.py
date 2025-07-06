@@ -61,7 +61,6 @@ def draw_svg(contributions):
 
     active_cells = []
 
-    # Definir alienígenas como símbolos reutilizáveis
     for i, day in enumerate(contributions):
         col = i // 7
         row = i % 7
@@ -87,26 +86,29 @@ def draw_svg(contributions):
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
     tiro_duracao = 0.4
+    total_duration = len(active_cells) * 1.5 + 2
+
     for idx, (target_x, target_y, alien_id, cell_index) in enumerate(active_cells):
         delay = idx * 1.5
         impact_time = delay + tiro_duracao
 
-        # Mover nave até alien
-        lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y}' begin='{delay}s' dur='0.4s' fill='freeze' />")
+        # Nave se move
+        lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='remove' repeatCount='indefinite' />")
 
-        # Tiro como retângulo animado
+        # Tiro animado
         x1 = ship_x + 10
         x2 = target_x
         y = target_y
         lines.append(f"<rect id='bullet{idx}' x='{x1}' y='{y - 1}' width='6' height='2' fill='yellow' visibility='hidden'>")
-        lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay + 0.4}s' dur='{tiro_duracao}s' />")
-        lines.append(f"  <animate attributeName='x' from='{x1}' to='{x2}' begin='{delay + 0.4}s' dur='{tiro_duracao}s' fill='freeze' />")
-        lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
+        lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay + 0.4}s' dur='{tiro_duracao}s' repeatCount='indefinite' />")
+        lines.append(f"  <animate attributeName='x' from='{x1}' to='{x2}' begin='{delay + 0.4}s' dur='{tiro_duracao}s' fill='remove' repeatCount='indefinite' />")
+        lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' repeatCount='indefinite' />")
         lines.append("</rect>")
 
-        # Inserir alienígena como <use> para permitir remoção
-        lines.append(f"<use xlink:href='#{alien_id}' x='{target_x}' y='{target_y}'>")
-        lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
+        # Alienígena visível novamente no loop
+        lines.append(f"<use xlink:href='#{alien_id}' x='{target_x}' y='{target_y}' visibility='visible'>")
+        lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' dur='0.1s' repeatCount='indefinite' />")
+        lines.append(f"  <set attributeName='visibility' to='visible' begin='{total_duration}s' />")
         lines.append("</use>")
 
     lines.append(f"<text x='30' y='175' fill='white'>{USERNAME}</text>")
@@ -124,4 +126,4 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ Tiro animado como bala + alienígenas desaparecendo corretamente com <use>!")
+    print("✅ Agora o SVG entra em loop contínuo com nave, tiros e alienígenas!")

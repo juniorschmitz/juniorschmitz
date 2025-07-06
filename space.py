@@ -68,19 +68,12 @@ def draw_svg(contributions):
         x = x_start + col * (cell_size + padding)
 
         count = day['count']
-        alien_id = f"invader{i}"
 
         base_color = "#222"
         lines.append(f"<rect x='{x}' y='{y - 12}' width='{cell_size}' height='{cell_size}' fill='{base_color}' rx='2' />")
 
         if count > 0:
-            lines.append(f"<g id='{alien_id}'>")
-            lines.append(f"  <text x='0' y='0' fill='violet'>")
-            lines.append(f"    {INVADER}")
-            lines.append(f"    <animate attributeName='y' values='0;3;0' dur='0.6s' repeatCount='indefinite' />")
-            lines.append("  </text>")
-            lines.append("</g>")
-            active_cells.append((x, y, alien_id, i))
+            active_cells.append((x, y, i))
 
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
@@ -90,28 +83,33 @@ def draw_svg(contributions):
     for loop in range(2):
         offset = loop * total_duration
 
-        for idx, (target_x, target_y, alien_id, cell_index) in enumerate(active_cells):
+        for idx, (target_x, target_y, cell_index) in enumerate(active_cells):
             delay = idx * 1.5 + offset
             impact_time = delay + tiro_duracao
+
+            invader_id = f"invader_{loop}_{idx}"
+
+            # Define alien
+            lines.append(f"<g id='{invader_id}'>")
+            lines.append(f"  <text x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
+            lines.append(f"    {INVADER}")
+            lines.append(f"    <animate attributeName='y' values='{target_y};{target_y + 3};{target_y}' dur='0.6s' repeatCount='indefinite' />")
+            lines.append(f"    <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
+            lines.append(f"    <set attributeName='visibility' to='visible' begin='{offset + total_duration}s' />")
+            lines.append("  </text>")
+            lines.append("</g>")
 
             # Nave se move
             lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='freeze' />")
 
-            # Tiro animado
+            # Tiro
             x1 = ship_x + 10
             x2 = target_x
-            y = target_y
-            lines.append(f"<rect id='bullet{loop}_{idx}' x='{x1}' y='{y - 1}' width='6' height='2' fill='yellow' visibility='hidden'>")
+            lines.append(f"<rect x='{x1}' y='{target_y - 1}' width='6' height='2' fill='yellow' visibility='hidden'>")
             lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay + 0.4}s' dur='{tiro_duracao}s' />")
             lines.append(f"  <animate attributeName='x' from='{x1}' to='{x2}' begin='{delay + 0.4}s' dur='{tiro_duracao}s' fill='freeze' />")
             lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
             lines.append("</rect>")
-
-            # Alien via <use> com ID único por loop
-            lines.append(f"<use id='alien{loop}_{idx}' xlink:href='#{alien_id}' x='{target_x}' y='{target_y}' visibility='visible'>")
-            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
-            lines.append(f"  <set attributeName='visibility' to='visible' begin='{offset + total_duration}s' />")
-            lines.append("</use>")
 
     lines.append(SVG_FOOTER)
     return "\n".join(lines)

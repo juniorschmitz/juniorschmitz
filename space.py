@@ -75,6 +75,12 @@ def draw_svg(contributions):
         if count > 0:
             active_cells.append((x, y, i))
 
+    # Definição única do alien
+    lines.append(f"<g id='invader'>")
+    lines.append(f"  <text x='0' y='0' fill='violet'>{INVADER}</text>")
+    lines.append("</g>")
+
+    # Nave única
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
     tiro_duracao = 0.4
@@ -87,17 +93,14 @@ def draw_svg(contributions):
             delay = idx * 1.5 + offset
             impact_time = delay + tiro_duracao
 
-            invader_id = f"invader_{loop}_{idx}"
+            use_id = f"use-alien-{loop}-{idx}"
 
-            # Define alien
-            lines.append(f"<g id='{invader_id}'>")
-            lines.append(f"  <text x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
-            lines.append(f"    {INVADER}")
-            lines.append(f"    <animate attributeName='y' values='{target_y};{target_y + 3};{target_y}' dur='0.6s' repeatCount='indefinite' />")
-            lines.append(f"    <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
-            lines.append(f"    <set attributeName='visibility' to='visible' begin='{offset + total_duration}s' />")
-            lines.append("  </text>")
-            lines.append("</g>")
+            # Alien como use
+            lines.append(f"<use id='{use_id}' xlink:href='#invader' x='{target_x}' y='{target_y}' visibility='visible'>")
+            lines.append(f"  <animate attributeName='y' values='{target_y};{target_y + 3};{target_y}' dur='0.6s' begin='{delay}s' repeatCount='5' />")
+            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
+            lines.append(f"  <set attributeName='visibility' to='visible' begin='{offset + total_duration}s' />")
+            lines.append("</use>")
 
             # Nave se move
             lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='freeze' />")

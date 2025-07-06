@@ -84,11 +84,12 @@ def draw_svg(contributions):
             delay = idx * 1.5 + offset
             impact_time = delay + tiro_duracao
 
-            # Alienígena diretamente em <text>
-            lines.append(f"<text id='alien_{loop}_{idx}' x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
+            # Alienígena
+            alien_id = f"alien_{loop}_{idx}"
+            lines.append(f"<text id='{alien_id}' x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
             lines.append(f"  {INVADER}")
             lines.append(f"  <animate attributeName='y' values='{target_y};{target_y + 3};{target_y}' dur='0.6s' begin='{delay}s' repeatCount='5' />")
-            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
+            lines.append(f"  <animate attributeName='fill' values='violet;#ffb3ff' begin='{impact_time}s' dur='0.2s' fill='freeze' />")
             lines.append(f"  <set attributeName='visibility' to='visible' begin='{offset + total_duration}s' />")
             lines.append("</text>")
 

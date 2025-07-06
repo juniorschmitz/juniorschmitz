@@ -79,8 +79,8 @@ def draw_svg(contributions):
             lines.append(f"  <text x='{x}' y='{y}' fill='violet'>")
             lines.append(f"    {INVADER}")
             lines.append(f"    <animate attributeName='y' values='{y};{y+3};{y}' dur='0.6s' repeatCount='indefinite' />")
-            lines.append("  </text>
-</g>")
+            lines.append("  </text>")
+            lines.append("</g>")
             active_cells.append((x, y, alien_id, i))
 
     # Nave única

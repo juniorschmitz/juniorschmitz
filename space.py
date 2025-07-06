@@ -85,13 +85,19 @@ def draw_svg(contributions):
             impact_time = delay + tiro_duracao
             reset_time = offset + total_duration
 
-            alien_id = f"alien_{loop}_{idx}"
-            lines.append(f"<text id='{alien_id}' x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
+            # Alien roxo animado (visível até ser atingido)
+            lines.append(f"<text id='alien_{loop}_{idx}_normal' x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
             lines.append(f"  {INVADER}")
             lines.append(f"  <animate attributeName='y' values='{target_y};{target_y + 3};{target_y}' dur='0.6s' begin='{delay}s' repeatCount='indefinite' />")
-            lines.append(f"  <animate attributeName='fill' values='violet;#ffb3ff' begin='{impact_time}s' dur='0.1s' fill='freeze' />")
-            lines.append(f"  <set attributeName='y' to='{target_y}' begin='{impact_time + 0.1}s' />")
-            lines.append(f"  <set attributeName='fill' to='violet' begin='{reset_time}s' />")
+            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time}s' />")
+            lines.append(f"  <set attributeName='visibility' to='visible' begin='{reset_time}s' />")
+            lines.append("</text>")
+
+            # Alien rosa estático (visível após o impacto)
+            lines.append(f"<text id='alien_{loop}_{idx}_hit' x='{target_x}' y='{target_y}' fill='#ffb3ff' visibility='hidden'>")
+            lines.append(f"  {INVADER}")
+            lines.append(f"  <set attributeName='visibility' to='visible' begin='{impact_time}s' />")
+            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{reset_time}s' />")
             lines.append("</text>")
 
             # Nave se move

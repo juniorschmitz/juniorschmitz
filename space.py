@@ -94,8 +94,8 @@ def draw_svg(contributions):
             lines.append(f"  <set attributeName='visibility' to='visible' begin='{reset_time}s' />")
             lines.append("</text>")
 
-            # Apenas permitir o tiro se dentro do tempo útil
-            if impact_time < reset_time:
+            # Tiro e nave apenas se dentro do tempo útil (antes do último alien)
+            if delay < offset + len(active_cells) * 1.5:
                 # Nave se move
                 lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='freeze' />")
 

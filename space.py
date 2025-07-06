@@ -87,7 +87,7 @@ def draw_svg(contributions):
     tiro_duracao = 0.4
     total_duration = len(active_cells) * 1.5 + 3
 
-    for loop in range(2):  # gera duas execuções para reset visível
+    for loop in range(2):
         offset = loop * total_duration
 
         for idx, (target_x, target_y, alien_id, cell_index) in enumerate(active_cells):
@@ -107,8 +107,8 @@ def draw_svg(contributions):
             lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
             lines.append("</rect>")
 
-            # Alien via <use>
-            lines.append(f"<use xlink:href='#{alien_id}' x='{target_x}' y='{target_y}' visibility='visible'>")
+            # Alien via <use> com ID único por loop
+            lines.append(f"<use id='alien{loop}_{idx}' xlink:href='#{alien_id}' x='{target_x}' y='{target_y}' visibility='visible'>")
             lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
             lines.append(f"  <set attributeName='visibility' to='visible' begin='{offset + total_duration}s' />")
             lines.append("</use>")

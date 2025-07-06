@@ -76,8 +76,9 @@ def draw_svg(contributions):
 
     tiro_duracao = 0.4
     total_duration = len(active_cells) * 1.5 + 3
+    ciclos = 2
 
-    for loop in range(2):
+    for loop in range(ciclos):
         offset = loop * total_duration
 
         for idx, (target_x, target_y, cell_index) in enumerate(active_cells):
@@ -93,17 +94,19 @@ def draw_svg(contributions):
             lines.append(f"  <set attributeName='visibility' to='visible' begin='{reset_time}s' />")
             lines.append("</text>")
 
-            # Nave se move
-            lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='freeze' />")
+            # Apenas permitir o tiro se dentro do tempo útil
+            if impact_time < reset_time:
+                # Nave se move
+                lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='freeze' />")
 
-            # Tiro
-            x1 = ship_x + 10
-            x2 = target_x
-            lines.append(f"<rect x='{x1}' y='{target_y - 1}' width='6' height='2' fill='yellow' visibility='hidden'>")
-            lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay + 0.4}s' dur='{tiro_duracao}s' />")
-            lines.append(f"  <animate attributeName='x' from='{x1}' to='{x2}' begin='{delay + 0.4}s' dur='{tiro_duracao}s' fill='freeze' />")
-            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
-            lines.append("</rect>")
+                # Tiro
+                x1 = ship_x + 10
+                x2 = target_x
+                lines.append(f"<rect x='{x1}' y='{target_y - 1}' width='6' height='2' fill='yellow' visibility='hidden'>")
+                lines.append(f"  <set attributeName='visibility' to='visible' begin='{delay + 0.4}s' dur='{tiro_duracao}s' />")
+                lines.append(f"  <animate attributeName='x' from='{x1}' to='{x2}' begin='{delay + 0.4}s' dur='{tiro_duracao}s' fill='freeze' />")
+                lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
+                lines.append("</rect>")
 
     lines.append(SVG_FOOTER)
     return "\n".join(lines)

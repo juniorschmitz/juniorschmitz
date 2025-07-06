@@ -59,11 +59,6 @@ def draw_svg(contributions):
 
     active_cells = []
 
-    # Define alienígena base (um só)
-    lines.append(f"<g id='invader'>")
-    lines.append(f"  <text x='0' y='0' fill='violet'>{INVADER}</text>")
-    lines.append("</g>")
-
     for i, day in enumerate(contributions):
         col = i // 7
         row = i % 7
@@ -88,14 +83,14 @@ def draw_svg(contributions):
         for idx, (target_x, target_y, cell_index) in enumerate(active_cells):
             delay = idx * 1.5 + offset
             impact_time = delay + tiro_duracao
-            use_id = f"alien-{loop}-{idx}"
 
-            # Aplica o <use> com <set> direto para controlar o sumiço
-            lines.append(f"<use id='{use_id}' xlink:href='#invader' x='{target_x}' y='{target_y}' visibility='visible'>")
+            # Alienígena diretamente em <text>
+            lines.append(f"<text id='alien_{loop}_{idx}' x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
+            lines.append(f"  {INVADER}")
             lines.append(f"  <animate attributeName='y' values='{target_y};{target_y + 3};{target_y}' dur='0.6s' begin='{delay}s' repeatCount='5' />")
             lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
             lines.append(f"  <set attributeName='visibility' to='visible' begin='{offset + total_duration}s' />")
-            lines.append("</use>")
+            lines.append("</text>")
 
             # Nave se move
             lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='freeze' />")

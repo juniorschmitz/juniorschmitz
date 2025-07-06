@@ -76,9 +76,9 @@ def draw_svg(contributions):
 
         if count > 0:
             lines.append(f"<g id='{alien_id}'>")
-            lines.append(f"  <text x='{x}' y='{y}' fill='violet'>")
+            lines.append(f"  <text x='0' y='0' fill='violet'>")
             lines.append(f"    {INVADER}")
-            lines.append(f"    <animate attributeName='y' values='{y};{y+3};{y}' dur='0.6s' repeatCount='indefinite' />")
+            lines.append(f"    <animate attributeName='y' values='0;3;0' dur='0.6s' repeatCount='indefinite' />")
             lines.append("  </text>")
             lines.append("</g>")
             active_cells.append((x, y, alien_id, i))
@@ -104,8 +104,8 @@ def draw_svg(contributions):
         lines.append(f"  <set attributeName='visibility' to='hidden' begin='{delay + tiro_duracao + 0.6}s' />")
         lines.append("</rect>")
 
-        # Alien some com <use>
-        lines.append(f"<use xlink:href='#{alien_id}'>")
+        # Inserir alienígena como <use> para permitir remoção
+        lines.append(f"<use xlink:href='#{alien_id}' x='{target_x}' y='{target_y}'>")
         lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.4}s' />")
         lines.append("</use>")
 
@@ -124,4 +124,4 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ Alienígenas desaparecendo e tiro animado como bala móvel!")
+    print("✅ Tiro animado como bala + alienígenas desaparecendo corretamente com <use>!")

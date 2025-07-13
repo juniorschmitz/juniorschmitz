@@ -58,13 +58,17 @@ def draw_svg(contributions):
 
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
+    total_duration = len(active_cells) * 1.5
+
     for idx, (target_x, target_y) in enumerate(active_cells):
         delay, impact = idx * 1.5, idx * 1.5 + 0.4
 
-        lines.append(f"<text id='alien_{idx}' x='{target_x}' y='{target_y}' fill='violet'>")
+        lines.append(f"<text id='alien_{idx}' x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
         lines.append(f"  {INVADER}")
         lines.append(f"  <animate attributeName='y' values='{target_y};{target_y+3};{target_y}' dur='0.6s' repeatCount='indefinite'/>")
         lines.append(f"  <animateTransform attributeName='transform' attributeType='XML' type='scale' values='1;1.8;0' dur='0.3s' begin='{impact}s' fill='freeze'/>")
+        lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact + 0.3}s'/>")
+        lines.append(f"  <set attributeName='visibility' to='visible' begin='{total_duration + 1}s'/>")
         lines.append("</text>")
 
         lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='1s' fill='freeze'/>")
@@ -72,8 +76,10 @@ def draw_svg(contributions):
         lines.append(f"<rect x='{ship_x+10}' y='{target_y-1}' width='6' height='2' fill='yellow' visibility='hidden'>")
         lines.append(f"  <set attributeName='visibility' to='visible' begin='{impact-0.4}s' dur='0.4s'/>")
         lines.append(f"  <animate attributeName='x' from='{ship_x+10}' to='{target_x}' begin='{impact-0.4}s' dur='0.4s' fill='freeze'/>")
+        lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact + 0.1}s'/>")
         lines.append("</rect>")
 
+    lines.append(f"<animate id='loop' attributeName='visibility' values='visible' dur='{total_duration + 2}s' repeatCount='indefinite'/>")
     lines.append(SVG_FOOTER)
     return "\n".join(lines)
 

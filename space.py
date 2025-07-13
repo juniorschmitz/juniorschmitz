@@ -47,7 +47,13 @@ def draw_svg(contributions):
     cell_size, padding = 14, 2
     x_start, y_start = 100, 20
 
-    total_duration = len(contributions) * 2
+    # Timings corrigidos
+    move_duration = 0.8      # Tempo para nave se mover
+    shot_duration = 0.6      # Tempo para tiro viajar
+    explosion_duration = 0.5 # Tempo de explosão
+    cycle_interval = 2.0     # Intervalo entre ataques
+    
+    total_duration = len(contributions) * cycle_interval
     ciclos = 2
 
     # Grid de fundo
@@ -57,55 +63,86 @@ def draw_svg(contributions):
         y = y_start + row * (cell_size + padding)
         lines.append(f"<rect x='{x}' y='{y - 12}' width='{cell_size}' height='{cell_size}' fill='#222' rx='2'/>")
 
+    # Nave principal
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
     for ciclo in range(ciclos):
         ciclo_offset = ciclo * total_duration
 
         for idx, (cell_idx, _) in enumerate(contributions):
-            delay = ciclo_offset + idx * 1.5
-            impact_time = delay + 1.0
-            reset_time = (ciclo + 1) * total_duration
-
+            delay = ciclo_offset + idx * cycle_interval
+            
             col, row = divmod(cell_idx, 7)
             alien_x = x_start + col * (cell_size + padding)
             alien_y = y_start + row * (cell_size + padding)
 
-            # Alien
+            # Timings sincronizados
+            move_start = delay
+            move_end = move_start + move_duration
+            shot_start = move_end  # Tiro começa quando nave chega na posição
+            shot_end = shot_start + shot_duration
+            explosion_start = shot_end  # Explosão começa quando tiro atinge alien
+            explosion_end = explosion_start + explosion_duration
+            return_start = explosion_end  # Nave retorna após explosão
+            return_end = return_start + move_duration
+            
+            reset_time = (ciclo + 1) * total_duration
+
+            # Alien com animação de hover
             alien_id = f"alien_{ciclo}_{idx}"
             lines.append(f"<text id='{alien_id}' x='{alien_x}' y='{alien_y}' fill='violet' visibility='visible'>")
             lines.append(f"{INVADER}")
+            # Animação de hover contínua
             lines.append(f"<animate attributeName='y' values='{alien_y};{alien_y+3};{alien_y}' dur='0.6s' "
                          f"begin='{ciclo_offset}s' repeatCount='indefinite'/>")
-            lines.append(f"<set attributeName='visibility' to='hidden' begin='{impact_time}s'/>")
+            # Alien desaparece quando é atingido
+            lines.append(f"<set attributeName='visibility' to='hidden' begin='{explosion_start}s'/>")
+            # Alien reaparece no próximo ciclo
             lines.append(f"<set attributeName='visibility' to='visible' begin='{reset_time}s'/>")
             lines.append("</text>")
 
-            # Explosão
+            # Explosão sincronizada
             explosion_id = f"explosion_{ciclo}_{idx}"
             lines.append(f"<text id='{explosion_id}' x='{alien_x}' y='{alien_y}' visibility='hidden' font-size='16'>")
             lines.append(EXPLOSION)
-            lines.append(f"<set attributeName='visibility' to='visible' begin='{impact_time}s' dur='0.5s'/>")
-            lines.append(f"<set attributeName='visibility' to='hidden' begin='{impact_time + 0.5}s'/>")
+            lines.append(f"<set attributeName='visibility' to='visible' begin='{explosion_start}s' dur='{explosion_duration}s'/>")
+            lines.append(f"<animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='{explosion_duration}s' begin='{explosion_start}s'/>")
             lines.append("</text>")
 
-            # Nave (movimenta primeiro)
-            lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{alien_y};{ship_y_default}' "
-                         f"begin='{delay}s' dur='1s' fill='freeze'/>")
+            # Movimento da nave (ida e volta)
+            lines.append(f"<animate xlink:href='#ship' attributeName='x' "
+                         f"values='{ship_x};{alien_x};{alien_x};{ship_x}' "
+                         f"dur='{move_duration + shot_duration + explosion_duration + move_duration}s' "
+                         f"begin='{move_start}s' fill='freeze'/>")
+            
+            lines.append(f"<animate xlink:href='#ship' attributeName='y' "
+                         f"values='{ship_y_default};{alien_y};{alien_y};{ship_y_default}' "
+                         f"dur='{move_duration + shot_duration + explosion_duration + move_duration}s' "
+                         f"begin='{move_start}s' fill='freeze'/>")
 
-            # Tiro
-            tiro_inicio = delay + 1.0
-            lines.append(f"<rect x='{ship_x + 10}' y='{alien_y - 1}' width='6' height='2' fill='yellow' visibility='hidden'>")
-            lines.append(f"<set attributeName='visibility' to='visible' begin='{tiro_inicio}s'/>")
-            lines.append(f"<animate attributeName='x' from='{ship_x + 10}' to='{alien_x}' begin='{tiro_inicio}s' dur='0.4s' fill='freeze'/>")
-            lines.append(f"<set attributeName='visibility' to='hidden' begin='{tiro_inicio + 0.4}s'/>")
+            # Tiro sincronizado - parte da posição da nave quando ela chega no alien
+            lines.append(f"<rect x='{alien_x + 10}' y='{alien_y}' width='6' height='2' fill='yellow' visibility='hidden'>")
+            lines.append(f"<set attributeName='visibility' to='visible' begin='{shot_start}s'/>")
+            lines.append(f"<animate attributeName='x' from='{alien_x + 10}' to='{alien_x - 3}' begin='{shot_start}s' dur='{shot_duration}s' fill='freeze'/>")
+            lines.append(f"<set attributeName='visibility' to='hidden' begin='{shot_end}s'/>")
             lines.append("</rect>")
+
+            # Efeito de flash no impacto
+            lines.append(f"<circle cx='{alien_x}' cy='{alien_y}' r='15' fill='white' opacity='0' visibility='hidden'>")
+            lines.append(f"<set attributeName='visibility' to='visible' begin='{explosion_start}s' dur='0.1s'/>")
+            lines.append(f"<animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='{explosion_start}s'/>")
+            lines.append("</circle>")
 
     # Loop infinito (reset silencioso)
     lines.append(f"<rect visibility='hidden'>")
     lines.append(f"<set attributeName='visibility' to='visible' begin='{total_duration * ciclos}s' dur='0.1s' "
                  f"repeatCount='indefinite'/>")
     lines.append("</rect>")
+
+    # Indicador de score/progresso
+    lines.append(f"<text x='750' y='30' fill='#7ee787' font-size='12'>GitHub Space Invaders</text>")
+    lines.append(f"<text x='750' y='50' fill='#58a6ff' font-size='10'>Contributions: {len(contributions)}</text>")
+    lines.append(f"<text x='750' y='70' fill='#f85149' font-size='10'>Targets destroyed: {len(contributions) * ciclos}</text>")
 
     lines.append(SVG_FOOTER)
     return "\n".join(lines)
@@ -119,3 +156,5 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
+    print(f"✅ Space Invaders gerado com {len(contributions)} alvos!")
+    print("🎮 Arquivo salvo em: output/space-invaders-grid.svg")

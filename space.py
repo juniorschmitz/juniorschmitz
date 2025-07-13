@@ -87,17 +87,21 @@ def draw_svg(contributions):
             
             reset_time = (ciclo + 1) * total_duration
 
-            # Alien com animação de hover
+            # Alien com animação de movimento no lugar
             alien_id = f"alien_{ciclo}_{idx}"
             lines.append(f"<text id='{alien_id}' x='{alien_x}' y='{alien_y}' fill='violet' visibility='visible'>")
             lines.append(f"{INVADER}")
-            # Animação de hover contínua
-            lines.append(f"<animate attributeName='y' values='{alien_y};{alien_y+3};{alien_y}' dur='0.6s' "
+            # Animação de movimento lateral no lugar
+            lines.append(f"<animate attributeName='x' values='{alien_x};{alien_x+5};{alien_x};{alien_x-5};{alien_x}' dur='1.5s' "
                          f"begin='{ciclo_offset}s' repeatCount='indefinite'/>")
-            # Alien desaparece quando é atingido
+            # Animação de movimento vertical (hover)
+            lines.append(f"<animate attributeName='y' values='{alien_y};{alien_y+3};{alien_y};{alien_y-2};{alien_y}' dur='1.2s' "
+                         f"begin='{ciclo_offset + 0.3}s' repeatCount='indefinite'/>")
+            # Alien desaparece quando é atingido e NÃO reaparece no mesmo ciclo
             lines.append(f"<set attributeName='visibility' to='hidden' begin='{explosion_start}s'/>")
-            # Alien reaparece no próximo ciclo
-            lines.append(f"<set attributeName='visibility' to='visible' begin='{reset_time}s'/>")
+            # Alien só reaparece no próximo ciclo completo
+            if ciclo < ciclos - 1:  # Não reaparece no último ciclo
+                lines.append(f"<set attributeName='visibility' to='visible' begin='{reset_time}s'/>")
             lines.append("</text>")
 
             # Explosão sincronizada

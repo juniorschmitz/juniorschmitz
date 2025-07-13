@@ -1,5 +1,4 @@
 import requests
-from datetime import datetime
 import os
 
 USERNAME = os.getenv("GITHUB_USERNAME", "juniorschmitz")
@@ -11,7 +10,8 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='900' height='200' style='background:black;font-family:monospace;font-size:14px;'>"""
+SVG_HEADER = """<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
+width='900' height='200' style='background:black;font-family:monospace;font-size:14px;'>"""
 SVG_FOOTER = "</svg>"
 
 INVADER = "👾"
@@ -26,7 +26,6 @@ def get_contributions():
           contributionCalendar {{
             weeks {{
               contributionDays {{
-                date
                 contributionCount
               }}
             }}
@@ -38,86 +37,75 @@ def get_contributions():
     response = requests.post(GRAPHQL_API_URL, json={"query": query}, headers=HEADERS)
     data = response.json()
     weeks = data['data']['user']['contributionsCollection']['contributionCalendar']['weeks']
-    days = []
-    for week in weeks:
-        for day in week['contributionDays']:
-            days.append({
-                'date': day['date'],
-                'count': day['contributionCount']
-            })
-    return days
+    days = [day for week in weeks for day in week['contributionDays']]
+    return [(idx, day['contributionCount']) for idx, day in enumerate(days) if day['contributionCount'] > 0]
 
 def draw_svg(contributions):
     lines = [SVG_HEADER]
-    cell_size = 14
-    padding = 2
-    x_start = 100
-    y_start = 20
-    ship_x = 30
-    ship_y_default = 90
 
-    active_cells = []
+    ship_x, ship_y_default = 30, 90
+    cell_size, padding = 14, 2
+    x_start, y_start = 100, 20
 
-    for i, day in enumerate(contributions):
-        col = i // 7
-        row = i % 7
-        y = y_start + row * (cell_size + padding)
+    total_duration = len(contributions) * 2
+    ciclos = 2
+
+    # Grid de fundo
+    for i in range(53 * 7):
+        col, row = divmod(i, 7)
         x = x_start + col * (cell_size + padding)
-
-        if day['count'] > 0:
-            active_cells.append((x, y))
-
-        base_color = "#222"
-        lines.append(f"<rect x='{x}' y='{y - 12}' width='{cell_size}' height='{cell_size}' fill='{base_color}' rx='2' />")
+        y = y_start + row * (cell_size + padding)
+        lines.append(f"<rect x='{x}' y='{y - 12}' width='{cell_size}' height='{cell_size}' fill='#222' rx='2'/>")
 
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
-    tiro_duracao = 0.4
-    movimento_nave_duracao = 0.8
-    intervalo_entre_tiros = 1.5
-    total_duration = len(active_cells) * intervalo_entre_tiros + 3
+    for ciclo in range(ciclos):
+        ciclo_offset = ciclo * total_duration
 
-    ciclos = 2  # pode aumentar se quiser mais loops visíveis
+        for idx, (cell_idx, _) in enumerate(contributions):
+            delay = ciclo_offset + idx * 1.5
+            impact_time = delay + 1.0
+            reset_time = (ciclo + 1) * total_duration
 
-    for loop in range(ciclos):
-        offset = loop * total_duration
+            col, row = divmod(cell_idx, 7)
+            alien_x = x_start + col * (cell_size + padding)
+            alien_y = y_start + row * (cell_size + padding)
 
-        for idx, (target_x, target_y) in enumerate(active_cells):
-            delay = idx * intervalo_entre_tiros + offset
-            impact_time = delay + movimento_nave_duracao
-            reset_time = offset + total_duration
-
-            # Alienígena
-            lines.append(f"<text id='alien_{loop}_{idx}' x='{target_x}' y='{target_y}' fill='violet' visibility='visible'>")
-            lines.append(f"  {INVADER}")
-            lines.append(f"  <animate attributeName='y' values='{target_y};{target_y + 3};{target_y}' dur='0.6s' begin='{offset}s' repeatCount='indefinite' />")
-            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time}s' />")
-            lines.append(f"  <set attributeName='visibility' to='visible' begin='{reset_time}s' />")
+            # Alien
+            alien_id = f"alien_{ciclo}_{idx}"
+            lines.append(f"<text id='{alien_id}' x='{alien_x}' y='{alien_y}' fill='violet' visibility='visible'>")
+            lines.append(f"{INVADER}")
+            lines.append(f"<animate attributeName='y' values='{alien_y};{alien_y+3};{alien_y}' dur='0.6s' "
+                         f"begin='{ciclo_offset}s' repeatCount='indefinite'/>")
+            lines.append(f"<set attributeName='visibility' to='hidden' begin='{impact_time}s'/>")
+            lines.append(f"<set attributeName='visibility' to='visible' begin='{reset_time}s'/>")
             lines.append("</text>")
 
-            # Explosão (curta duração)
-            lines.append(f"<text x='{target_x}' y='{target_y}' visibility='hidden' font-size='16'>")
-            lines.append(f"  {EXPLOSION}")
-            lines.append(f"  <set attributeName='visibility' to='visible' begin='{impact_time}s' dur='0.3s' />")
-            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{impact_time + 0.3}s' />")
+            # Explosão
+            explosion_id = f"explosion_{ciclo}_{idx}"
+            lines.append(f"<text id='{explosion_id}' x='{alien_x}' y='{alien_y}' visibility='hidden' font-size='16'>")
+            lines.append(EXPLOSION)
+            lines.append(f"<set attributeName='visibility' to='visible' begin='{impact_time}s' dur='0.5s'/>")
+            lines.append(f"<set attributeName='visibility' to='hidden' begin='{impact_time + 0.5}s'/>")
             lines.append("</text>")
 
-            # Nave move-se primeiro, depois tiro
-            lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{target_y};{ship_y_default}' begin='{delay}s' dur='{movimento_nave_duracao}s' fill='freeze' />")
+            # Nave (movimenta primeiro)
+            lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default};{alien_y};{ship_y_default}' "
+                         f"begin='{delay}s' dur='1s' fill='freeze'/>")
 
-            # Tiro (após a nave chegar)
-            tiro_inicio = delay + movimento_nave_duracao
-            tiro_fim = tiro_inicio + tiro_duracao
-
-            lines.append(f"<rect x='{ship_x + 10}' y='{target_y - 1}' width='6' height='2' fill='yellow' visibility='hidden'>")
-            lines.append(f"  <set attributeName='visibility' to='visible' begin='{tiro_inicio}s' />")
-            lines.append(f"  <animate attributeName='x' from='{ship_x + 10}' to='{target_x}' begin='{tiro_inicio}s' dur='{tiro_duracao}s' fill='freeze' />")
-            lines.append(f"  <set attributeName='visibility' to='hidden' begin='{tiro_fim + 0.1}s' />")
+            # Tiro
+            tiro_inicio = delay + 1.0
+            lines.append(f"<rect x='{ship_x + 10}' y='{alien_y - 1}' width='6' height='2' fill='yellow' visibility='hidden'>")
+            lines.append(f"<set attributeName='visibility' to='visible' begin='{tiro_inicio}s'/>")
+            lines.append(f"<animate attributeName='x' from='{ship_x + 10}' to='{alien_x}' begin='{tiro_inicio}s' dur='0.4s' fill='freeze'/>")
+            lines.append(f"<set attributeName='visibility' to='hidden' begin='{tiro_inicio + 0.4}s'/>")
             lines.append("</rect>")
 
-    # Reinício automático
-    lines.append(f"<animate xlink:href='#ship' attributeName='y' values='{ship_y_default}' begin='{total_duration * ciclos}s' dur='0.1s' fill='freeze' />")
-    lines.append(f"<rect><animate attributeName='visibility' from='hidden' to='visible' dur='0.1s' begin='{total_duration * ciclos}s' repeatCount='indefinite' /></rect>")
+    # Loop infinito (reset silencioso)
+    lines.append(f"<rect visibility='hidden'>")
+    lines.append(f"<set attributeName='visibility' to='visible' begin='{total_duration * ciclos}s' dur='0.1s' "
+                 f"repeatCount='indefinite'/>")
+    lines.append("</rect>")
 
     lines.append(SVG_FOOTER)
     return "\n".join(lines)
@@ -131,4 +119,3 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print("✅ Animação SVG gerada com sucesso!")

@@ -93,15 +93,17 @@ def draw_svg(contributions):
             lines.append(f"{INVADER}")
             # Animação de movimento lateral no lugar
             lines.append(f"<animate attributeName='x' values='{alien_x};{alien_x+5};{alien_x};{alien_x-5};{alien_x}' dur='1.5s' "
-                         f"begin='{ciclo_offset}s' repeatCount='indefinite'/>")
+                         f"begin='{ciclo_offset}s' end='{explosion_start}s' repeatCount='indefinite'/>")
             # Animação de movimento vertical (hover)
             lines.append(f"<animate attributeName='y' values='{alien_y};{alien_y+3};{alien_y};{alien_y-2};{alien_y}' dur='1.2s' "
-                         f"begin='{ciclo_offset + 0.3}s' repeatCount='indefinite'/>")
-            # Alien desaparece quando é atingido e NÃO reaparece no mesmo ciclo
+                         f"begin='{ciclo_offset + 0.3}s' end='{explosion_start}s' repeatCount='indefinite'/>")
+            # Alien desaparece quando é atingido e todas as animações param
             lines.append(f"<set attributeName='visibility' to='hidden' begin='{explosion_start}s'/>")
+            lines.append(f"<set attributeName='opacity' to='0' begin='{explosion_start}s'/>")
             # Alien só reaparece no próximo ciclo completo
             if ciclo < ciclos - 1:  # Não reaparece no último ciclo
                 lines.append(f"<set attributeName='visibility' to='visible' begin='{reset_time}s'/>")
+                lines.append(f"<set attributeName='opacity' to='1' begin='{reset_time}s'/>")
             lines.append("</text>")
 
             # Explosão sincronizada

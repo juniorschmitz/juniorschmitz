@@ -84,7 +84,6 @@ def draw_svg(contributions):
             explosion_start = shot_end  # Explosão começa quando tiro atinge alien
             explosion_end = explosion_start + explosion_duration
             return_start = explosion_end  # Nave retorna após explosão
-            return_end = return_start + move_duration
             
             reset_time = (ciclo + 1) * total_duration
 
@@ -109,21 +108,16 @@ def draw_svg(contributions):
             lines.append(f"<animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='{explosion_duration}s' begin='{explosion_start}s'/>")
             lines.append("</text>")
 
-            # Movimento da nave (ida e volta)
-            lines.append(f"<animate xlink:href='#ship' attributeName='x' "
-                         f"values='{ship_x};{alien_x};{alien_x};{ship_x}' "
-                         f"dur='{move_duration + shot_duration + explosion_duration + move_duration}s' "
-                         f"begin='{move_start}s' fill='freeze'/>")
-            
+            # Movimento da nave (apenas vertical - para cima e para baixo)
             lines.append(f"<animate xlink:href='#ship' attributeName='y' "
-                         f"values='{ship_y_default};{alien_y};{alien_y};{ship_y_default}' "
-                         f"dur='{move_duration + shot_duration + explosion_duration + move_duration}s' "
+                         f"values='{ship_y_default};{alien_y};{ship_y_default}' "
+                         f"dur='{move_duration + shot_duration + explosion_duration}s' "
                          f"begin='{move_start}s' fill='freeze'/>")
 
-            # Tiro sincronizado - parte da posição da nave quando ela chega no alien
-            lines.append(f"<rect x='{alien_x + 10}' y='{alien_y}' width='6' height='2' fill='yellow' visibility='hidden'>")
+            # Tiro horizontal - da nave até o alien
+            lines.append(f"<rect x='{ship_x + 10}' y='{alien_y}' width='6' height='2' fill='yellow' visibility='hidden'>")
             lines.append(f"<set attributeName='visibility' to='visible' begin='{shot_start}s'/>")
-            lines.append(f"<animate attributeName='x' from='{alien_x + 10}' to='{alien_x - 3}' begin='{shot_start}s' dur='{shot_duration}s' fill='freeze'/>")
+            lines.append(f"<animate attributeName='x' from='{ship_x + 10}' to='{alien_x - 3}' begin='{shot_start}s' dur='{shot_duration}s' fill='freeze'/>")
             lines.append(f"<set attributeName='visibility' to='hidden' begin='{shot_end}s'/>")
             lines.append("</rect>")
 
@@ -139,11 +133,6 @@ def draw_svg(contributions):
                  f"repeatCount='indefinite'/>")
     lines.append("</rect>")
 
-    # Indicador de score/progresso
-    lines.append(f"<text x='750' y='30' fill='#7ee787' font-size='12'>GitHub Space Invaders</text>")
-    lines.append(f"<text x='750' y='50' fill='#58a6ff' font-size='10'>Contributions: {len(contributions)}</text>")
-    lines.append(f"<text x='750' y='70' fill='#f85149' font-size='10'>Targets destroyed: {len(contributions) * ciclos}</text>")
-
     lines.append(SVG_FOOTER)
     return "\n".join(lines)
 
@@ -156,5 +145,5 @@ if __name__ == "__main__":
     contributions = get_contributions()
     svg_content = draw_svg(contributions)
     save_svg(svg_content)
-    print(f"✅ Space Invaders gerado com {len(contributions)} alvos!")
-    print("🎮 Arquivo salvo em: output/space-invaders-grid.svg")
+    print(f"Space Invaders gerado com {len(contributions)} alvos!")
+    print("Arquivo salvo em: output/space-invaders-grid.svg")

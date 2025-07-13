@@ -372,12 +372,133 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <rect x='932' y='88' width='14' height='14' fill='#222' rx='2'/>
 <rect x='932' y='104' width='14' height='14' fill='#222' rx='2'/>
 <text id='ship' x='30' y='90' fill='white'>🚀</text>
-<text id='alien_0_0' x='100' y='84' fill='violet' opacity='1'>
+<text id='alien_0' x='100' y='84' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='100;105;100;95;100' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='100;105;100;95;100' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='1.4s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='1.4s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='33.4s' fill='freeze'/>
+</text>
+<text id='alien_1' x='788' y='52' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='788;793;788;783;788' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='3.4s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='35.4s' fill='freeze'/>
+</text>
+<text id='alien_2' x='804' y='52' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='804;809;804;799;804' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='5.3999999999999995s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='37.4s' fill='freeze'/>
+</text>
+<text id='alien_3' x='836' y='52' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='836;841;836;831;836' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='7.3999999999999995s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='39.4s' fill='freeze'/>
+</text>
+<text id='alien_4' x='868' y='20' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='868;873;868;863;868' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='9.4s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='41.4s' fill='freeze'/>
+</text>
+<text id='alien_5' x='884' y='20' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='11.4s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='43.4s' fill='freeze'/>
+</text>
+<text id='alien_6' x='884' y='84' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='13.4s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='45.4s' fill='freeze'/>
+</text>
+<text id='alien_7' x='884' y='100' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='100;103;100;98;100' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='15.4s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='47.4s' fill='freeze'/>
+</text>
+<text id='alien_8' x='884' y='116' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='17.400000000000002s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='49.4s' fill='freeze'/>
+</text>
+<text id='alien_9' x='900' y='84' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='900;905;900;895;900' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='19.400000000000002s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='51.4s' fill='freeze'/>
+</text>
+<text id='alien_10' x='900' y='116' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='900;905;900;895;900' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='21.400000000000002s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='53.4s' fill='freeze'/>
+</text>
+<text id='alien_11' x='916' y='36' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='36;39;36;34;36' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='23.400000000000002s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='55.4s' fill='freeze'/>
+</text>
+<text id='alien_12' x='916' y='52' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='25.400000000000002s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='57.4s' fill='freeze'/>
+</text>
+<text id='alien_13' x='916' y='116' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='27.400000000000002s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='59.4s' fill='freeze'/>
+</text>
+<text id='alien_14' x='932' y='20' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='932;937;932;927;932' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='29.400000000000002s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='61.4s' fill='freeze'/>
+</text>
+<text id='alien_15' x='932' y='116' fill='violet' opacity='1'>
+👾
+<animate attributeName='x' values='932;937;932;927;932' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='31.400000000000002s' fill='freeze'/>
+<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
+<animate attributeName='opacity' values='1;0' dur='0.1s' begin='63.4s' fill='freeze'/>
 </text>
 <text id='explosion_0_0' x='100' y='84' visibility='hidden' font-size='16'>
 💥
@@ -394,13 +515,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='1.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='1.4s'/>
 </circle>
-<text id='alien_0_1' x='788' y='52' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='788;793;788;783;788' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='3.4s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_1' x='788' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='3.4s' dur='0.5s'/>
@@ -416,13 +530,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='3.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='3.4s'/>
 </circle>
-<text id='alien_0_2' x='804' y='52' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='804;809;804;799;804' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='5.3999999999999995s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_2' x='804' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='5.3999999999999995s' dur='0.5s'/>
@@ -438,13 +545,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='5.3999999999999995s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='5.3999999999999995s'/>
 </circle>
-<text id='alien_0_3' x='836' y='52' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='836;841;836;831;836' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='7.3999999999999995s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_3' x='836' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='7.3999999999999995s' dur='0.5s'/>
@@ -460,13 +560,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='7.3999999999999995s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='7.3999999999999995s'/>
 </circle>
-<text id='alien_0_4' x='868' y='20' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='868;873;868;863;868' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='9.4s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_4' x='868' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='9.4s' dur='0.5s'/>
@@ -482,13 +575,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='9.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='9.4s'/>
 </circle>
-<text id='alien_0_5' x='884' y='20' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='11.4s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_5' x='884' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='11.4s' dur='0.5s'/>
@@ -504,13 +590,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='11.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='11.4s'/>
 </circle>
-<text id='alien_0_6' x='884' y='84' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='13.4s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_6' x='884' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='13.4s' dur='0.5s'/>
@@ -526,13 +605,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='13.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='13.4s'/>
 </circle>
-<text id='alien_0_7' x='884' y='100' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='100;103;100;98;100' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='15.4s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_7' x='884' y='100' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='15.4s' dur='0.5s'/>
@@ -548,13 +620,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='15.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='15.4s'/>
 </circle>
-<text id='alien_0_8' x='884' y='116' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='17.400000000000002s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_8' x='884' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='17.400000000000002s' dur='0.5s'/>
@@ -570,13 +635,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='17.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='17.400000000000002s'/>
 </circle>
-<text id='alien_0_9' x='900' y='84' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='900;905;900;895;900' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='19.400000000000002s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_9' x='900' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='19.400000000000002s' dur='0.5s'/>
@@ -592,13 +650,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='19.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='19.400000000000002s'/>
 </circle>
-<text id='alien_0_10' x='900' y='116' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='900;905;900;895;900' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='21.400000000000002s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_10' x='900' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='21.400000000000002s' dur='0.5s'/>
@@ -614,13 +665,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='21.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='21.400000000000002s'/>
 </circle>
-<text id='alien_0_11' x='916' y='36' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='36;39;36;34;36' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='23.400000000000002s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_11' x='916' y='36' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='23.400000000000002s' dur='0.5s'/>
@@ -636,13 +680,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='23.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='23.400000000000002s'/>
 </circle>
-<text id='alien_0_12' x='916' y='52' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='25.400000000000002s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_12' x='916' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='25.400000000000002s' dur='0.5s'/>
@@ -658,13 +695,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='25.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='25.400000000000002s'/>
 </circle>
-<text id='alien_0_13' x='916' y='116' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='27.400000000000002s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_13' x='916' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='27.400000000000002s' dur='0.5s'/>
@@ -680,13 +710,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='27.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='27.400000000000002s'/>
 </circle>
-<text id='alien_0_14' x='932' y='20' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='932;937;932;927;932' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='29.400000000000002s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_14' x='932' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='29.400000000000002s' dur='0.5s'/>
@@ -702,13 +725,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='29.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='29.400000000000002s'/>
 </circle>
-<text id='alien_0_15' x='932' y='116' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='932;937;932;927;932' dur='1.5s' begin='0.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='31.400000000000002s' fill='freeze'/>
-<animate attributeName='opacity' values='0;1' dur='0.1s' begin='32.0s' fill='freeze'/>
-</text>
 <text id='explosion_0_15' x='932' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='31.400000000000002s' dur='0.5s'/>
@@ -724,12 +740,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='31.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='31.400000000000002s'/>
 </circle>
-<text id='alien_1_0' x='100' y='84' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='100;105;100;95;100' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='33.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_0' x='100' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='33.4s' dur='0.5s'/>
@@ -745,12 +755,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='33.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='33.4s'/>
 </circle>
-<text id='alien_1_1' x='788' y='52' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='788;793;788;783;788' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='35.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_1' x='788' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='35.4s' dur='0.5s'/>
@@ -766,12 +770,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='35.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='35.4s'/>
 </circle>
-<text id='alien_1_2' x='804' y='52' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='804;809;804;799;804' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='37.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_2' x='804' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='37.4s' dur='0.5s'/>
@@ -787,12 +785,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='37.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='37.4s'/>
 </circle>
-<text id='alien_1_3' x='836' y='52' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='836;841;836;831;836' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='39.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_3' x='836' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='39.4s' dur='0.5s'/>
@@ -808,12 +800,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='39.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='39.4s'/>
 </circle>
-<text id='alien_1_4' x='868' y='20' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='868;873;868;863;868' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='41.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_4' x='868' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='41.4s' dur='0.5s'/>
@@ -829,12 +815,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='41.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='41.4s'/>
 </circle>
-<text id='alien_1_5' x='884' y='20' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='43.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_5' x='884' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='43.4s' dur='0.5s'/>
@@ -850,12 +830,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='43.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='43.4s'/>
 </circle>
-<text id='alien_1_6' x='884' y='84' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='45.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_6' x='884' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='45.4s' dur='0.5s'/>
@@ -871,12 +845,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='45.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='45.4s'/>
 </circle>
-<text id='alien_1_7' x='884' y='100' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='100;103;100;98;100' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='47.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_7' x='884' y='100' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='47.4s' dur='0.5s'/>
@@ -892,12 +860,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='47.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='47.4s'/>
 </circle>
-<text id='alien_1_8' x='884' y='116' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='49.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_8' x='884' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='49.4s' dur='0.5s'/>
@@ -913,12 +875,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='49.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='49.4s'/>
 </circle>
-<text id='alien_1_9' x='900' y='84' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='900;905;900;895;900' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='51.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_9' x='900' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='51.4s' dur='0.5s'/>
@@ -934,12 +890,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='51.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='51.4s'/>
 </circle>
-<text id='alien_1_10' x='900' y='116' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='900;905;900;895;900' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='53.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_10' x='900' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='53.4s' dur='0.5s'/>
@@ -955,12 +905,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='53.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='53.4s'/>
 </circle>
-<text id='alien_1_11' x='916' y='36' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='36;39;36;34;36' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='55.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_11' x='916' y='36' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='55.4s' dur='0.5s'/>
@@ -976,12 +920,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='55.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='55.4s'/>
 </circle>
-<text id='alien_1_12' x='916' y='52' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='57.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_12' x='916' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='57.4s' dur='0.5s'/>
@@ -997,12 +935,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='57.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='57.4s'/>
 </circle>
-<text id='alien_1_13' x='916' y='116' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='916;921;916;911;916' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='59.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_13' x='916' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='59.4s' dur='0.5s'/>
@@ -1018,12 +950,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='59.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='59.4s'/>
 </circle>
-<text id='alien_1_14' x='932' y='20' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='932;937;932;927;932' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='61.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_14' x='932' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='61.4s' dur='0.5s'/>
@@ -1039,12 +965,6 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <set attributeName='visibility' to='visible' begin='61.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='61.4s'/>
 </circle>
-<text id='alien_1_15' x='932' y='116' fill='violet' opacity='1'>
-👾
-<animate attributeName='x' values='932;937;932;927;932' dur='1.5s' begin='32.0s' repeatCount='indefinite'/>
-<animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='32.3s' repeatCount='indefinite'/>
-<animate attributeName='opacity' values='1;1;0' dur='0.1s' begin='63.4s' fill='freeze'/>
-</text>
 <text id='explosion_1_15' x='932' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='63.4s' dur='0.5s'/>

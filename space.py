@@ -66,6 +66,40 @@ def draw_svg(contributions):
     # Nave principal
     lines.append(f"<text id='ship' x='{ship_x}' y='{ship_y_default}' fill='white'>{SHIP}</text>")
 
+    # Criar aliens apenas uma vez (fora do loop de ciclos)
+    for idx, (cell_idx, _) in enumerate(contributions):
+        col, row = divmod(cell_idx, 7)
+        alien_x = x_start + col * (cell_size + padding)
+        alien_y = y_start + row * (cell_size + padding)
+        
+        # Alien único com ID baseado apenas no índice
+        alien_id = f"alien_{idx}"
+        lines.append(f"<text id='{alien_id}' x='{alien_x}' y='{alien_y}' fill='violet' opacity='1'>")
+        lines.append(f"{INVADER}")
+        
+        # Animação de movimento contínuo (sempre ativo)
+        lines.append(f"<animate attributeName='x' values='{alien_x};{alien_x+5};{alien_x};{alien_x-5};{alien_x}' dur='1.5s' "
+                     f"begin='0s' repeatCount='indefinite'/>")
+        lines.append(f"<animate attributeName='y' values='{alien_y};{alien_y+3};{alien_y};{alien_y-2};{alien_y}' dur='1.2s' "
+                     f"begin='0.3s' repeatCount='indefinite'/>")
+        
+        # Criar todas as animações de desaparecimento/reaparecimento para todos os ciclos
+        for ciclo in range(ciclos):
+            delay = ciclo * total_duration + idx * cycle_interval
+            explosion_start = delay + move_duration + shot_duration
+            reset_time = (ciclo + 1) * total_duration
+            
+            # Desaparecimento neste ciclo
+            lines.append(f"<animate attributeName='opacity' values='1;0' dur='0.1s' "
+                         f"begin='{explosion_start}s' fill='freeze'/>")
+            
+            # Reaparecimento no próximo ciclo (se não for o último)
+            if ciclo < ciclos - 1:
+                lines.append(f"<animate attributeName='opacity' values='0;1' dur='0.1s' "
+                             f"begin='{reset_time}s' fill='freeze'/>")
+        
+        lines.append("</text>")
+
     for ciclo in range(ciclos):
         ciclo_offset = ciclo * total_duration
 
@@ -86,25 +120,6 @@ def draw_svg(contributions):
             return_start = explosion_end  # Nave retorna após explosão
             
             reset_time = (ciclo + 1) * total_duration
-
-            # Alien com animação de movimento no lugar
-            alien_id = f"alien_{ciclo}_{idx}"
-            lines.append(f"<text id='{alien_id}' x='{alien_x}' y='{alien_y}' fill='violet' opacity='1'>")
-            lines.append(f"{INVADER}")
-            # Animação de movimento lateral no lugar (para até o momento da explosão)
-            lines.append(f"<animate attributeName='x' values='{alien_x};{alien_x+5};{alien_x};{alien_x-5};{alien_x}' dur='1.5s' "
-                         f"begin='{ciclo_offset}s' repeatCount='indefinite'/>")
-            # Animação de movimento vertical (hover)
-            lines.append(f"<animate attributeName='y' values='{alien_y};{alien_y+3};{alien_y};{alien_y-2};{alien_y}' dur='1.2s' "
-                         f"begin='{ciclo_offset + 0.3}s' repeatCount='indefinite'/>")
-            # DESAPARECIMENTO TOTAL - usar opacity em vez de visibility
-            lines.append(f"<animate attributeName='opacity' values='1;1;0' dur='0.1s' "
-                         f"begin='{explosion_start}s' fill='freeze'/>")
-            # Alien só reaparece no próximo ciclo completo
-            if ciclo < ciclos - 1:  # Não reaparece no último ciclo
-                lines.append(f"<animate attributeName='opacity' values='0;1' dur='0.1s' "
-                             f"begin='{reset_time}s' fill='freeze'/>")
-            lines.append("</text>")
 
             # Explosão sincronizada
             explosion_id = f"explosion_{ciclo}_{idx}"

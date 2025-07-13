@@ -89,21 +89,21 @@ def draw_svg(contributions):
 
             # Alien com animação de movimento no lugar
             alien_id = f"alien_{ciclo}_{idx}"
-            lines.append(f"<text id='{alien_id}' x='{alien_x}' y='{alien_y}' fill='violet' visibility='visible'>")
+            lines.append(f"<text id='{alien_id}' x='{alien_x}' y='{alien_y}' fill='violet' opacity='1'>")
             lines.append(f"{INVADER}")
-            # Animação de movimento lateral no lugar
+            # Animação de movimento lateral no lugar (para até o momento da explosão)
             lines.append(f"<animate attributeName='x' values='{alien_x};{alien_x+5};{alien_x};{alien_x-5};{alien_x}' dur='1.5s' "
-                         f"begin='{ciclo_offset}s' end='{explosion_start}s' repeatCount='indefinite'/>")
+                         f"begin='{ciclo_offset}s' repeatCount='indefinite'/>")
             # Animação de movimento vertical (hover)
             lines.append(f"<animate attributeName='y' values='{alien_y};{alien_y+3};{alien_y};{alien_y-2};{alien_y}' dur='1.2s' "
-                         f"begin='{ciclo_offset + 0.3}s' end='{explosion_start}s' repeatCount='indefinite'/>")
-            # Alien desaparece quando é atingido e todas as animações param
-            lines.append(f"<set attributeName='visibility' to='hidden' begin='{explosion_start}s'/>")
-            lines.append(f"<set attributeName='opacity' to='0' begin='{explosion_start}s'/>")
+                         f"begin='{ciclo_offset + 0.3}s' repeatCount='indefinite'/>")
+            # DESAPARECIMENTO TOTAL - usar opacity em vez de visibility
+            lines.append(f"<animate attributeName='opacity' values='1;1;0' dur='0.1s' "
+                         f"begin='{explosion_start}s' fill='freeze'/>")
             # Alien só reaparece no próximo ciclo completo
             if ciclo < ciclos - 1:  # Não reaparece no último ciclo
-                lines.append(f"<set attributeName='visibility' to='visible' begin='{reset_time}s'/>")
-                lines.append(f"<set attributeName='opacity' to='1' begin='{reset_time}s'/>")
+                lines.append(f"<animate attributeName='opacity' values='0;1' dur='0.1s' "
+                             f"begin='{reset_time}s' fill='freeze'/>")
             lines.append("</text>")
 
             # Explosão sincronizada

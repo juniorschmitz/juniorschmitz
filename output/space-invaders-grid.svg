@@ -372,127 +372,127 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <rect x='932' y='88' width='14' height='14' fill='#222' rx='2'/>
 <rect x='932' y='104' width='14' height='14' fill='#222' rx='2'/>
 <text id='ship' x='30' y='90' fill='white'>🚀</text>
-<text id='alien_0' x='756' y='52' fill='violet' opacity='1'>
+<text id='alien_0' x='740' y='52' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='756;761;756;751;756' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='740;745;740;735;740' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='1.4s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='31.400000000000002s' fill='freeze'/>
 </text>
-<text id='alien_1' x='772' y='52' fill='violet' opacity='1'>
+<text id='alien_1' x='756' y='52' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='772;777;772;767;772' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='756;761;756;751;756' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='3.4s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='33.4s' fill='freeze'/>
 </text>
-<text id='alien_2' x='804' y='52' fill='violet' opacity='1'>
+<text id='alien_2' x='788' y='52' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='804;809;804;799;804' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='788;793;788;783;788' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='5.3999999999999995s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='35.4s' fill='freeze'/>
 </text>
-<text id='alien_3' x='836' y='20' fill='violet' opacity='1'>
+<text id='alien_3' x='820' y='20' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='836;841;836;831;836' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='820;825;820;815;820' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='7.3999999999999995s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='37.4s' fill='freeze'/>
 </text>
-<text id='alien_4' x='852' y='20' fill='violet' opacity='1'>
+<text id='alien_4' x='836' y='20' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='852;857;852;847;852' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='836;841;836;831;836' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='9.4s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='39.4s' fill='freeze'/>
 </text>
-<text id='alien_5' x='852' y='84' fill='violet' opacity='1'>
+<text id='alien_5' x='836' y='84' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='852;857;852;847;852' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='836;841;836;831;836' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='11.4s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='41.4s' fill='freeze'/>
 </text>
-<text id='alien_6' x='852' y='100' fill='violet' opacity='1'>
+<text id='alien_6' x='836' y='100' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='852;857;852;847;852' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='836;841;836;831;836' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='100;103;100;98;100' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='13.4s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='43.4s' fill='freeze'/>
 </text>
-<text id='alien_7' x='852' y='116' fill='violet' opacity='1'>
+<text id='alien_7' x='836' y='116' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='852;857;852;847;852' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='836;841;836;831;836' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='15.4s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='45.4s' fill='freeze'/>
 </text>
-<text id='alien_8' x='868' y='84' fill='violet' opacity='1'>
+<text id='alien_8' x='852' y='84' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='868;873;868;863;868' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='852;857;852;847;852' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='84;87;84;82;84' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='17.400000000000002s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='47.4s' fill='freeze'/>
 </text>
-<text id='alien_9' x='868' y='116' fill='violet' opacity='1'>
+<text id='alien_9' x='852' y='116' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='868;873;868;863;868' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='852;857;852;847;852' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='19.400000000000002s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='49.4s' fill='freeze'/>
 </text>
-<text id='alien_10' x='884' y='36' fill='violet' opacity='1'>
+<text id='alien_10' x='868' y='36' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='868;873;868;863;868' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='36;39;36;34;36' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='21.400000000000002s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='51.4s' fill='freeze'/>
 </text>
-<text id='alien_11' x='884' y='52' fill='violet' opacity='1'>
+<text id='alien_11' x='868' y='52' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='868;873;868;863;868' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='52;55;52;50;52' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='23.400000000000002s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='53.4s' fill='freeze'/>
 </text>
-<text id='alien_12' x='884' y='116' fill='violet' opacity='1'>
+<text id='alien_12' x='868' y='116' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='868;873;868;863;868' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='25.400000000000002s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='55.4s' fill='freeze'/>
 </text>
-<text id='alien_13' x='900' y='20' fill='violet' opacity='1'>
+<text id='alien_13' x='884' y='20' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='900;905;900;895;900' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='20;23;20;18;20' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='27.400000000000002s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='57.4s' fill='freeze'/>
 </text>
-<text id='alien_14' x='900' y='116' fill='violet' opacity='1'>
+<text id='alien_14' x='884' y='116' fill='violet' opacity='1'>
 👾
-<animate attributeName='x' values='900;905;900;895;900' dur='1.5s' begin='0s' repeatCount='indefinite'/>
+<animate attributeName='x' values='884;889;884;879;884' dur='1.5s' begin='0s' repeatCount='indefinite'/>
 <animate attributeName='y' values='116;119;116;114;116' dur='1.2s' begin='0.3s' repeatCount='indefinite'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='29.400000000000002s' fill='freeze'/>
 <animate attributeName='opacity' values='0;1' dur='0.1s' begin='30.0s' fill='freeze'/>
 <animate attributeName='opacity' values='1;0' dur='0.1s' begin='59.4s' fill='freeze'/>
 </text>
-<text id='explosion_0_0' x='756' y='52' visibility='hidden' font-size='16'>
+<text id='explosion_0_0' x='740' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='1.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='1.4s'/>
@@ -500,14 +500,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' dur='1.9s' begin='0.0s' fill='freeze'/>
 <rect x='40' y='52' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='0.8s'/>
-<animate attributeName='x' from='40' to='753' begin='0.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='737' begin='0.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='1.4s'/>
 </rect>
-<circle cx='756' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='740' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='1.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='1.4s'/>
 </circle>
-<text id='explosion_0_1' x='772' y='52' visibility='hidden' font-size='16'>
+<text id='explosion_0_1' x='756' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='3.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='3.4s'/>
@@ -515,14 +515,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' dur='1.9s' begin='2.0s' fill='freeze'/>
 <rect x='40' y='52' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='2.8s'/>
-<animate attributeName='x' from='40' to='769' begin='2.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='753' begin='2.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='3.4s'/>
 </rect>
-<circle cx='772' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='756' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='3.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='3.4s'/>
 </circle>
-<text id='explosion_0_2' x='804' y='52' visibility='hidden' font-size='16'>
+<text id='explosion_0_2' x='788' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='5.3999999999999995s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='5.3999999999999995s'/>
@@ -530,14 +530,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' dur='1.9s' begin='4.0s' fill='freeze'/>
 <rect x='40' y='52' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='4.8s'/>
-<animate attributeName='x' from='40' to='801' begin='4.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='785' begin='4.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='5.3999999999999995s'/>
 </rect>
-<circle cx='804' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='788' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='5.3999999999999995s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='5.3999999999999995s'/>
 </circle>
-<text id='explosion_0_3' x='836' y='20' visibility='hidden' font-size='16'>
+<text id='explosion_0_3' x='820' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='7.3999999999999995s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='7.3999999999999995s'/>
@@ -545,14 +545,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' dur='1.9s' begin='6.0s' fill='freeze'/>
 <rect x='40' y='20' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='6.8s'/>
-<animate attributeName='x' from='40' to='833' begin='6.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='817' begin='6.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='7.3999999999999995s'/>
 </rect>
-<circle cx='836' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='820' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='7.3999999999999995s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='7.3999999999999995s'/>
 </circle>
-<text id='explosion_0_4' x='852' y='20' visibility='hidden' font-size='16'>
+<text id='explosion_0_4' x='836' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='9.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='9.4s'/>
@@ -560,14 +560,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' dur='1.9s' begin='8.0s' fill='freeze'/>
 <rect x='40' y='20' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='8.8s'/>
-<animate attributeName='x' from='40' to='849' begin='8.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='833' begin='8.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='9.4s'/>
 </rect>
-<circle cx='852' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='836' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='9.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='9.4s'/>
 </circle>
-<text id='explosion_0_5' x='852' y='84' visibility='hidden' font-size='16'>
+<text id='explosion_0_5' x='836' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='11.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='11.4s'/>
@@ -575,14 +575,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' dur='1.9s' begin='10.0s' fill='freeze'/>
 <rect x='40' y='84' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='10.8s'/>
-<animate attributeName='x' from='40' to='849' begin='10.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='833' begin='10.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='11.4s'/>
 </rect>
-<circle cx='852' cy='84' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='836' cy='84' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='11.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='11.4s'/>
 </circle>
-<text id='explosion_0_6' x='852' y='100' visibility='hidden' font-size='16'>
+<text id='explosion_0_6' x='836' y='100' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='13.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='13.4s'/>
@@ -590,14 +590,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;100;90' dur='1.9s' begin='12.0s' fill='freeze'/>
 <rect x='40' y='100' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='12.8s'/>
-<animate attributeName='x' from='40' to='849' begin='12.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='833' begin='12.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='13.4s'/>
 </rect>
-<circle cx='852' cy='100' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='836' cy='100' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='13.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='13.4s'/>
 </circle>
-<text id='explosion_0_7' x='852' y='116' visibility='hidden' font-size='16'>
+<text id='explosion_0_7' x='836' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='15.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='15.4s'/>
@@ -605,14 +605,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' dur='1.9s' begin='14.0s' fill='freeze'/>
 <rect x='40' y='116' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='14.8s'/>
-<animate attributeName='x' from='40' to='849' begin='14.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='833' begin='14.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='15.4s'/>
 </rect>
-<circle cx='852' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='836' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='15.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='15.4s'/>
 </circle>
-<text id='explosion_0_8' x='868' y='84' visibility='hidden' font-size='16'>
+<text id='explosion_0_8' x='852' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='17.400000000000002s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='17.400000000000002s'/>
@@ -620,14 +620,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' dur='1.9s' begin='16.0s' fill='freeze'/>
 <rect x='40' y='84' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='16.8s'/>
-<animate attributeName='x' from='40' to='865' begin='16.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='849' begin='16.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='17.400000000000002s'/>
 </rect>
-<circle cx='868' cy='84' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='852' cy='84' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='17.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='17.400000000000002s'/>
 </circle>
-<text id='explosion_0_9' x='868' y='116' visibility='hidden' font-size='16'>
+<text id='explosion_0_9' x='852' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='19.400000000000002s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='19.400000000000002s'/>
@@ -635,14 +635,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' dur='1.9s' begin='18.0s' fill='freeze'/>
 <rect x='40' y='116' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='18.8s'/>
-<animate attributeName='x' from='40' to='865' begin='18.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='849' begin='18.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='19.400000000000002s'/>
 </rect>
-<circle cx='868' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='852' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='19.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='19.400000000000002s'/>
 </circle>
-<text id='explosion_0_10' x='884' y='36' visibility='hidden' font-size='16'>
+<text id='explosion_0_10' x='868' y='36' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='21.400000000000002s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='21.400000000000002s'/>
@@ -650,14 +650,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;36;90' dur='1.9s' begin='20.0s' fill='freeze'/>
 <rect x='40' y='36' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='20.8s'/>
-<animate attributeName='x' from='40' to='881' begin='20.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='865' begin='20.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='21.400000000000002s'/>
 </rect>
-<circle cx='884' cy='36' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='868' cy='36' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='21.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='21.400000000000002s'/>
 </circle>
-<text id='explosion_0_11' x='884' y='52' visibility='hidden' font-size='16'>
+<text id='explosion_0_11' x='868' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='23.400000000000002s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='23.400000000000002s'/>
@@ -665,14 +665,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' dur='1.9s' begin='22.0s' fill='freeze'/>
 <rect x='40' y='52' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='22.8s'/>
-<animate attributeName='x' from='40' to='881' begin='22.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='865' begin='22.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='23.400000000000002s'/>
 </rect>
-<circle cx='884' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='868' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='23.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='23.400000000000002s'/>
 </circle>
-<text id='explosion_0_12' x='884' y='116' visibility='hidden' font-size='16'>
+<text id='explosion_0_12' x='868' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='25.400000000000002s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='25.400000000000002s'/>
@@ -680,14 +680,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' dur='1.9s' begin='24.0s' fill='freeze'/>
 <rect x='40' y='116' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='24.8s'/>
-<animate attributeName='x' from='40' to='881' begin='24.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='865' begin='24.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='25.400000000000002s'/>
 </rect>
-<circle cx='884' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='868' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='25.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='25.400000000000002s'/>
 </circle>
-<text id='explosion_0_13' x='900' y='20' visibility='hidden' font-size='16'>
+<text id='explosion_0_13' x='884' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='27.400000000000002s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='27.400000000000002s'/>
@@ -695,14 +695,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' dur='1.9s' begin='26.0s' fill='freeze'/>
 <rect x='40' y='20' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='26.8s'/>
-<animate attributeName='x' from='40' to='897' begin='26.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='881' begin='26.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='27.400000000000002s'/>
 </rect>
-<circle cx='900' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='884' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='27.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='27.400000000000002s'/>
 </circle>
-<text id='explosion_0_14' x='900' y='116' visibility='hidden' font-size='16'>
+<text id='explosion_0_14' x='884' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='29.400000000000002s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='29.400000000000002s'/>
@@ -710,14 +710,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' dur='1.9s' begin='28.0s' fill='freeze'/>
 <rect x='40' y='116' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='28.8s'/>
-<animate attributeName='x' from='40' to='897' begin='28.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='881' begin='28.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='29.400000000000002s'/>
 </rect>
-<circle cx='900' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='884' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='29.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='29.400000000000002s'/>
 </circle>
-<text id='explosion_1_0' x='756' y='52' visibility='hidden' font-size='16'>
+<text id='explosion_1_0' x='740' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='31.400000000000002s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='31.400000000000002s'/>
@@ -725,14 +725,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' dur='1.9s' begin='30.0s' fill='freeze'/>
 <rect x='40' y='52' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='30.8s'/>
-<animate attributeName='x' from='40' to='753' begin='30.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='737' begin='30.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='31.400000000000002s'/>
 </rect>
-<circle cx='756' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='740' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='31.400000000000002s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='31.400000000000002s'/>
 </circle>
-<text id='explosion_1_1' x='772' y='52' visibility='hidden' font-size='16'>
+<text id='explosion_1_1' x='756' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='33.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='33.4s'/>
@@ -740,14 +740,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' dur='1.9s' begin='32.0s' fill='freeze'/>
 <rect x='40' y='52' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='32.8s'/>
-<animate attributeName='x' from='40' to='769' begin='32.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='753' begin='32.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='33.4s'/>
 </rect>
-<circle cx='772' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='756' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='33.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='33.4s'/>
 </circle>
-<text id='explosion_1_2' x='804' y='52' visibility='hidden' font-size='16'>
+<text id='explosion_1_2' x='788' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='35.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='35.4s'/>
@@ -755,14 +755,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' dur='1.9s' begin='34.0s' fill='freeze'/>
 <rect x='40' y='52' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='34.8s'/>
-<animate attributeName='x' from='40' to='801' begin='34.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='785' begin='34.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='35.4s'/>
 </rect>
-<circle cx='804' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='788' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='35.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='35.4s'/>
 </circle>
-<text id='explosion_1_3' x='836' y='20' visibility='hidden' font-size='16'>
+<text id='explosion_1_3' x='820' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='37.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='37.4s'/>
@@ -770,14 +770,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' dur='1.9s' begin='36.0s' fill='freeze'/>
 <rect x='40' y='20' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='36.8s'/>
-<animate attributeName='x' from='40' to='833' begin='36.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='817' begin='36.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='37.4s'/>
 </rect>
-<circle cx='836' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='820' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='37.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='37.4s'/>
 </circle>
-<text id='explosion_1_4' x='852' y='20' visibility='hidden' font-size='16'>
+<text id='explosion_1_4' x='836' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='39.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='39.4s'/>
@@ -785,14 +785,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' dur='1.9s' begin='38.0s' fill='freeze'/>
 <rect x='40' y='20' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='38.8s'/>
-<animate attributeName='x' from='40' to='849' begin='38.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='833' begin='38.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='39.4s'/>
 </rect>
-<circle cx='852' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='836' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='39.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='39.4s'/>
 </circle>
-<text id='explosion_1_5' x='852' y='84' visibility='hidden' font-size='16'>
+<text id='explosion_1_5' x='836' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='41.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='41.4s'/>
@@ -800,14 +800,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' dur='1.9s' begin='40.0s' fill='freeze'/>
 <rect x='40' y='84' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='40.8s'/>
-<animate attributeName='x' from='40' to='849' begin='40.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='833' begin='40.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='41.4s'/>
 </rect>
-<circle cx='852' cy='84' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='836' cy='84' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='41.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='41.4s'/>
 </circle>
-<text id='explosion_1_6' x='852' y='100' visibility='hidden' font-size='16'>
+<text id='explosion_1_6' x='836' y='100' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='43.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='43.4s'/>
@@ -815,14 +815,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;100;90' dur='1.9s' begin='42.0s' fill='freeze'/>
 <rect x='40' y='100' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='42.8s'/>
-<animate attributeName='x' from='40' to='849' begin='42.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='833' begin='42.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='43.4s'/>
 </rect>
-<circle cx='852' cy='100' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='836' cy='100' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='43.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='43.4s'/>
 </circle>
-<text id='explosion_1_7' x='852' y='116' visibility='hidden' font-size='16'>
+<text id='explosion_1_7' x='836' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='45.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='45.4s'/>
@@ -830,14 +830,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' dur='1.9s' begin='44.0s' fill='freeze'/>
 <rect x='40' y='116' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='44.8s'/>
-<animate attributeName='x' from='40' to='849' begin='44.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='833' begin='44.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='45.4s'/>
 </rect>
-<circle cx='852' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='836' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='45.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='45.4s'/>
 </circle>
-<text id='explosion_1_8' x='868' y='84' visibility='hidden' font-size='16'>
+<text id='explosion_1_8' x='852' y='84' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='47.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='47.4s'/>
@@ -845,14 +845,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;84;90' dur='1.9s' begin='46.0s' fill='freeze'/>
 <rect x='40' y='84' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='46.8s'/>
-<animate attributeName='x' from='40' to='865' begin='46.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='849' begin='46.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='47.4s'/>
 </rect>
-<circle cx='868' cy='84' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='852' cy='84' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='47.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='47.4s'/>
 </circle>
-<text id='explosion_1_9' x='868' y='116' visibility='hidden' font-size='16'>
+<text id='explosion_1_9' x='852' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='49.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='49.4s'/>
@@ -860,14 +860,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' dur='1.9s' begin='48.0s' fill='freeze'/>
 <rect x='40' y='116' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='48.8s'/>
-<animate attributeName='x' from='40' to='865' begin='48.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='849' begin='48.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='49.4s'/>
 </rect>
-<circle cx='868' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='852' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='49.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='49.4s'/>
 </circle>
-<text id='explosion_1_10' x='884' y='36' visibility='hidden' font-size='16'>
+<text id='explosion_1_10' x='868' y='36' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='51.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='51.4s'/>
@@ -875,14 +875,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;36;90' dur='1.9s' begin='50.0s' fill='freeze'/>
 <rect x='40' y='36' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='50.8s'/>
-<animate attributeName='x' from='40' to='881' begin='50.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='865' begin='50.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='51.4s'/>
 </rect>
-<circle cx='884' cy='36' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='868' cy='36' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='51.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='51.4s'/>
 </circle>
-<text id='explosion_1_11' x='884' y='52' visibility='hidden' font-size='16'>
+<text id='explosion_1_11' x='868' y='52' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='53.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='53.4s'/>
@@ -890,14 +890,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;52;90' dur='1.9s' begin='52.0s' fill='freeze'/>
 <rect x='40' y='52' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='52.8s'/>
-<animate attributeName='x' from='40' to='881' begin='52.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='865' begin='52.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='53.4s'/>
 </rect>
-<circle cx='884' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='868' cy='52' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='53.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='53.4s'/>
 </circle>
-<text id='explosion_1_12' x='884' y='116' visibility='hidden' font-size='16'>
+<text id='explosion_1_12' x='868' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='55.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='55.4s'/>
@@ -905,14 +905,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' dur='1.9s' begin='54.0s' fill='freeze'/>
 <rect x='40' y='116' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='54.8s'/>
-<animate attributeName='x' from='40' to='881' begin='54.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='865' begin='54.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='55.4s'/>
 </rect>
-<circle cx='884' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='868' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='55.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='55.4s'/>
 </circle>
-<text id='explosion_1_13' x='900' y='20' visibility='hidden' font-size='16'>
+<text id='explosion_1_13' x='884' y='20' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='57.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='57.4s'/>
@@ -920,14 +920,14 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;20;90' dur='1.9s' begin='56.0s' fill='freeze'/>
 <rect x='40' y='20' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='56.8s'/>
-<animate attributeName='x' from='40' to='897' begin='56.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='881' begin='56.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='57.4s'/>
 </rect>
-<circle cx='900' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='884' cy='20' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='57.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='57.4s'/>
 </circle>
-<text id='explosion_1_14' x='900' y='116' visibility='hidden' font-size='16'>
+<text id='explosion_1_14' x='884' y='116' visibility='hidden' font-size='16'>
 💥
 <set attributeName='visibility' to='visible' begin='59.4s' dur='0.5s'/>
 <animate attributeName='opacity' values='1;0.7;1;0.5;1;0' dur='0.5s' begin='59.4s'/>
@@ -935,10 +935,10 @@ width='900' height='200' style='background:black;font-family:monospace;font-size
 <animate xlink:href='#ship' attributeName='y' values='90;116;90' dur='1.9s' begin='58.0s' fill='freeze'/>
 <rect x='40' y='116' width='6' height='2' fill='yellow' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='58.8s'/>
-<animate attributeName='x' from='40' to='897' begin='58.8s' dur='0.6s' fill='freeze'/>
+<animate attributeName='x' from='40' to='881' begin='58.8s' dur='0.6s' fill='freeze'/>
 <set attributeName='visibility' to='hidden' begin='59.4s'/>
 </rect>
-<circle cx='900' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
+<circle cx='884' cy='116' r='15' fill='white' opacity='0' visibility='hidden'>
 <set attributeName='visibility' to='visible' begin='59.4s' dur='0.1s'/>
 <animate attributeName='opacity' values='0;0.8;0' dur='0.1s' begin='59.4s'/>
 </circle>

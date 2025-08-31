@@ -52,7 +52,3 @@ I'm always learning and striving to stay ahead of innovation in software enginee
 </p>
 
 ---
-
-<p align="center">
-  <sub>FMade with 💜 and animated <code>SVG</code> — Powered by GitHub Actions & Space Invaders nostalgia 🎮</sub>
-</p>
